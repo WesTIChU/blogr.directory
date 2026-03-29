@@ -6,13 +6,18 @@ import starlight from '@astrojs/starlight';
 export default defineConfig({
 	integrations: [
 		starlight({
-			title: 'My Docs',
+			title: 'BlogR Directory',
 			customCss: ['./src/styles/custom.css'],
 			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
 			sidebar: [
-           { label: 'About', link: '/about' },
             {
-                label: '📚 Blog Directory',
+                label: 'Getting started',
+                items: [
+					{ label: '🧠 About', slug: 'about' },
+                ],
+            },
+            {
+                label: 'Blog Directory',
                 items: [
 					{ label: '🧠 Personal Writing', slug: 'blogs/personal-writing' },
 					{ label: '🌍 Culture & Places', slug: 'blogs/culture-and-places' },
@@ -22,17 +27,17 @@ export default defineConfig({
                 ],
             },
                         {
-                label: '💬 Communities',
+                label: 'Communities',
                 items: [
                     { label: 'Forums', slug: 'communties/forums' },
                     { label: 'Niche Communities', slug: 'communties/niche-communities' },
                 ],
             },
-            {
-                label: '📁 Archived',
-                collapsed: true,
+                        {
+                label: 'Website Tools & Hosting', 
                 items: [
-
+                    { label: '⚙️ Blogging Platforms', slug: 'website-tools/blogging-platforms' },
+					{ label: '🌐️ Hosting Providers', slug: 'website-tools/hosting-providers' },
                 ],
             },
 			],

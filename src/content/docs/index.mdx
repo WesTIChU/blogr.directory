@@ -16,41 +16,58 @@ hero:
       variant: minimal
 ---
 
-import { Card, CardGrid } from '@astrojs/starlight/components';
+import { Card, CardGrid, LinkCard, Aside } from '@astrojs/starlight/components';
 
 ## A better internet, one real site at a time
 
 This is a hand-curated collection of **human-written blogs, personal websites, and genuine online communities**.
 
 No algorithms deciding what you see.  
-No AI-generated filler.  
+No AI filler.  
 No recycled content farms.
 
 Just real people sharing real thoughts.
+
+<Aside type="tip" title="What this site is">
+A curated place to discover writing with personality, websites with purpose, and corners of the internet that still feel alive.
+</Aside>
 
 ---
 
 ## What you’ll find here
 
 <CardGrid stagger>
-	<Card title="📓 Personal Blogs" icon="open-book">
-		Life stories, journals, and independent voices — the kind of writing that used to define the web.
+	<Card title="Personal Writing" icon="open-book">
+		Life stories, journals, essays, and independent voices — the kind of writing that used to define the web.
 	</Card>
-	<Card title="💻 Tech & Creative Writing" icon="document">
-		Developers, builders, and creators sharing ideas, experiments, and deep dives.
+	<Card title="Tech & Development" icon="setting">
+		Developers, builders, and curious people sharing ideas, experiments, and deep dives.
 	</Card>
-	<Card title="🌍 Communities" icon="users">
-		Forums and spaces where real discussion still happens — not just noise and scrolling.
+	<Card title="Culture & Places" icon="map-pin">
+		Local voices, place-based writing, history, landscapes, and blogs rooted somewhere real.
 	</Card>
-	<Card title="🧭 Curated, Not Automated" icon="check">
-		Every link is added by hand. If it’s here, it’s worth your time.
+	<Card title="Travel" icon="paper-plane-tilt">
+		Travel stories, journeys, and experiences with substance — not just affiliate fluff.
 	</Card>
-	<Card title="🪦 No Dead Internet" icon="close">
-		No AI spam. No low-effort SEO sites. No empty content.
+	<Card title="Communities" icon="users">
+		Forums and niche spaces where real discussion still happens — not just noise and scrolling.
 	</Card>
-	<Card title="📬 Always Growing" icon="add-document">
-		New blogs and communities are added as they’re discovered.
+	<Card title="Website Tools & Hosting" icon="window">
+		Platforms, hosting, and tools used by bloggers and independent sites across the web.
 	</Card>
+</CardGrid>
+
+---
+
+## Start exploring
+
+<CardGrid>
+	<LinkCard title="Personal Writing" href="/blogs/personal-writing/" description="Journals, essays, life writing, and independent voices." />
+	<LinkCard title="Culture & Places" href="/blogs/culture-and-places/" description="History, local life, landscapes, and places that matter." />
+	<LinkCard title="Travel" href="/blogs/travel/" description="Journeys, routes, stories, and travel blogs worth reading." />
+	<LinkCard title="Tech & Development" href="/blogs/tech-blogs/" description="Technical writing, indie dev blogs, and thoughtful web people." />
+	<LinkCard title="Finance, Bitcoin & Crypto" href="/blogs/finance-bitcoin-crypto/" description="Money, markets, Bitcoin, and critical writing on crypto." />
+	<LinkCard title="About" href="/about/" description="What this site is, why it exists, and how things get added." />
 </CardGrid>
 
 ---
@@ -63,15 +80,44 @@ That feeling is disappearing.
 
 This site is an attempt to bring a small part of it back.
 
-A place to:
+<CardGrid>
+	<Card title="Curated, not automated" icon="check">
+		Every link is added by hand. If it’s here, it’s because it feels worth your time.
+	</Card>
+	<Card title="No dead internet sludge" icon="close">
+		No AI spam. No empty SEO pages. No mass-produced filler pretending to be useful.
+	</Card>
+	<Card title="Built for discovery" icon="compass">
+		The goal is not to overwhelm you with links — it’s to help you find something genuinely worth reading.
+	</Card>
+</CardGrid>
+
+<Aside type="caution" title="What you won’t find here">
+This is not a giant dump of backlinks, scraped content, or AI-generated junk. If it doesn’t feel human, it doesn’t belong here.
+</Aside>
+
+---
+
+## A place to browse properly
+
+A good directory should feel like wandering into something interesting, not like being trapped in a search result.
+
+Here you can:
+
 - discover voices you’ve never heard before  
-- read something written with care  
-- and reconnect with the human side of the web  
+- find websites with actual personality  
+- browse by mood, topic, or curiosity  
+- reconnect with the human side of the web  
 
 ---
 
 ## Want to contribute?
 
-Know a great blog or community?
+Know a great blog, forum, or independent site worth adding?
 
 Submissions will be added soon — for now, keep exploring.
+
+<CardGrid>
+	<LinkCard title="Explore Blogs" href="/blogs/personal-writing/" description="Start with personal writing and follow whatever catches your eye." />
+	<LinkCard title="Read About the Project" href="/about/" description="See what the Human Web is trying to protect and build." />
+</CardGrid>

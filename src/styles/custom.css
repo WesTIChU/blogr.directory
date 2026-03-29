@@ -123,11 +123,6 @@ button[aria-controls="starlight__sidebar"] {
 	font-size: 0.85em;
 }
 
-/* Dim the #Archived sidebar section */
-ul.top-level > li:last-child {
-	opacity: 0.5;
-}
-
 @media (min-width: 50rem) {
 	.content-panel {
 		padding-inline: 1.5rem !important;
@@ -170,3 +165,9 @@ ul.top-level > li:last-child {
 .sl-markdown-content a:hover {
   text-decoration: underline;
 }
+
+
+.sidebar-pane {
+  outline: 3px solid rgb(13, 13, 12) !important;
+}
+

@@ -6,5 +6,8 @@ export default new Map([
 ["src/content/docs/blogs/personal-writing.mdx", () => import("astro:content-layer-deferred-module?astro%3Acontent-layer-deferred-module=&fileName=src%2Fcontent%2Fdocs%2Fblogs%2Fpersonal-writing.mdx&astroContentModuleFlag=true")],
 ["src/content/docs/blogs/tech-blogs.mdx", () => import("astro:content-layer-deferred-module?astro%3Acontent-layer-deferred-module=&fileName=src%2Fcontent%2Fdocs%2Fblogs%2Ftech-blogs.mdx&astroContentModuleFlag=true")],
 ["src/content/docs/blogs/travel.mdx", () => import("astro:content-layer-deferred-module?astro%3Acontent-layer-deferred-module=&fileName=src%2Fcontent%2Fdocs%2Fblogs%2Ftravel.mdx&astroContentModuleFlag=true")],
-["src/content/docs/index.mdx", () => import("astro:content-layer-deferred-module?astro%3Acontent-layer-deferred-module=&fileName=src%2Fcontent%2Fdocs%2Findex.mdx&astroContentModuleFlag=true")]]);
+["src/content/docs/index.mdx", () => import("astro:content-layer-deferred-module?astro%3Acontent-layer-deferred-module=&fileName=src%2Fcontent%2Fdocs%2Findex.mdx&astroContentModuleFlag=true")],
+["src/content/docs/website-tools/blogging-platforms.mdx", () => import("astro:content-layer-deferred-module?astro%3Acontent-layer-deferred-module=&fileName=src%2Fcontent%2Fdocs%2Fwebsite-tools%2Fblogging-platforms.mdx&astroContentModuleFlag=true")],
+["src/content/docs/website-tools/hosting-providers.mdx", () => import("astro:content-layer-deferred-module?astro%3Acontent-layer-deferred-module=&fileName=src%2Fcontent%2Fdocs%2Fwebsite-tools%2Fhosting-providers.mdx&astroContentModuleFlag=true")],
+["src/content/docs/website-tools/index.mdx", () => import("astro:content-layer-deferred-module?astro%3Acontent-layer-deferred-module=&fileName=src%2Fcontent%2Fdocs%2Fwebsite-tools%2Findex.mdx&astroContentModuleFlag=true")]]);
 		
