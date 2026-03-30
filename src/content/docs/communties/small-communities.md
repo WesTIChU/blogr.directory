@@ -13,4 +13,3 @@ No spam, no empty platforms — just active places with actual discussion.
 * <a href="https://www.ultimate-guitar.com/forum/" target="_blank" rel="noopener noreferrer"><strong>Ultimate Guitar</strong></a> - Musicians sharing tabs, tips, and advice.
 * <a href="https://forums.somethingawful.com/" target="_blank" rel="noopener noreferrer"><strong>Something Awful</strong></a> - Old-school forum with unique internet culture.
 * <a href="https://www.gaiaonline.com/forum/" target="_blank" rel="noopener noreferrer"><strong>Gaia Online</strong></a> - Forum-based community with social and creative elements.
-* <a href="https://thewell.com/" target="_blank" rel="noopener noreferrer"><strong>The WELL</strong></a> - One of the oldest online communities, focused on deep discussion.

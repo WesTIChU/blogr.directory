@@ -30,7 +30,7 @@ export default defineConfig({
                 label: 'Communities',
                 items: [
                     { label: 'Forums', slug: 'communties/forums' },
-                    { label: 'Niche Communities', slug: 'communties/niche-communities' },
+                    { label: 'Small Communities', slug: 'communties/small-communities' },
                 ],
             },
                         {
