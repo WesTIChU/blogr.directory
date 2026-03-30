@@ -1,8 +1,10 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
+import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
+    site: 'https://blogr.directory',
 	integrations: [
 		starlight({
 			title: 'BlogR Directory',
@@ -53,5 +55,6 @@ export default defineConfig({
 				},
 			],
 		}),
+        sitemap(),
 	],
 });
