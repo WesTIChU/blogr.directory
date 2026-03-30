@@ -1,10 +1,20 @@
 ---
 title: Hosting Providers
-description: Hosting services used to run blogs, websites, and self-hosted platforms
+description: Hosting services used to run blogs, websites, and online projects
 ---
-import { Aside, Badge } from '@astrojs/starlight/components';
 
-Services that power blogs and websites — from beginner-friendly hosting to full control VPS and developer platforms.
+import { Card, CardGrid, Badge } from '@astrojs/starlight/components';
+
+<CardGrid cols={2}>
+  <Card title="Keep it simple" icon="rocket">
+    Use beginner hosting if you just want your site online quickly without setup.
+  </Card>
+  <Card title="Take control" icon="gear">
+    VPS and cloud hosting give you more control, flexibility, and room to grow.
+  </Card>
+</CardGrid>
+
+Services that power blogs and websites — from beginner-friendly hosting to full control VPS and modern deployment platforms.
 
 ---
 
@@ -17,7 +27,7 @@ Services that power blogs and websites — from beginner-friendly hosting to ful
 
 ---
 
-### ⚙️ Managed & WordPress Hosting
+### ⚙️ Managed Hosting
 
 * <a href="https://wpengine.com" target="_blank" rel="noopener noreferrer"><strong>WP Engine</strong></a> – Premium managed WordPress hosting.
 * <a href="https://kinsta.com" target="_blank" rel="noopener noreferrer"><strong>Kinsta</strong></a> – Fast, modern hosting built on Google Cloud.
@@ -25,13 +35,13 @@ Services that power blogs and websites — from beginner-friendly hosting to ful
 
 ---
 
-### 🧠 VPS & Self-Hosting
+### 🧠 VPS & Cloud Servers
 
-* <a href="https://www.hetzner.com" target="_blank" rel="noopener noreferrer"><strong>Hetzner</strong></a> – Powerful, affordable VPS (very popular in Europe).
+* <a href="https://www.hetzner.com" target="_blank" rel="noopener noreferrer"><strong>Hetzner</strong></a> – Powerful, affordable VPS and dedicated servers.
 * <a href="https://www.digitalocean.com" target="_blank" rel="noopener noreferrer"><strong>DigitalOcean</strong></a> – Developer-friendly VPS with simple pricing.
 * <a href="https://www.linode.com" target="_blank" rel="noopener noreferrer"><strong>Linode</strong></a> – Reliable cloud hosting with good performance.
 * <a href="https://www.vultr.com" target="_blank" rel="noopener noreferrer"><strong>Vultr</strong></a> – Flexible VPS with global locations.
-* <a href="https://www.racknerd.com" target="_blank" rel="noopener noreferrer"><strong>RackNerd</strong></a> – Budget VPS deals, popular in the low-cost hosting community. <Badge text="BUDGET" size="small" />
+* <a href="https://www.racknerd.com" target="_blank" rel="noopener noreferrer"><strong>RackNerd</strong></a> – Budget VPS deals. <Badge text="BUDGET" size="small" />
 * <a href="https://www.hosthatch.com" target="_blank" rel="noopener noreferrer"><strong>HostHatch</strong></a> – High storage VPS and good value plans.
 * <a href="https://buyvm.net" target="_blank" rel="noopener noreferrer"><strong>BuyVM</strong></a> – Cheap VPS with strong community reputation.
 * <a href="https://greencloudvps.com" target="_blank" rel="noopener noreferrer"><strong>GreenCloud VPS</strong></a> – Affordable VPS with good performance options.
@@ -49,13 +59,11 @@ Services that power blogs and websites — from beginner-friendly hosting to ful
 
 ---
 
-### 🧰 Self-Hosting Platforms & Tools
-
-* <a href="https://coolify.io" target="_blank" rel="noopener noreferrer"><strong>Coolify</strong></a> – Self-hosted alternative to Vercel/Heroku.
-* <a href="https://caprover.com" target="_blank" rel="noopener noreferrer"><strong>CapRover</strong></a> – Simple self-hosting platform for apps and sites.
-* <a href="https://dokku.com" target="_blank" rel="noopener noreferrer"><strong>Dokku</strong></a> – Lightweight Heroku-like platform for VPS.
-
----
+<Card>
+  👉 If you're unsure: start with <strong>Hostinger</strong> or <strong>SiteGround</strong>.  
+  If you're more technical, go with <strong>Hetzner</strong> or <strong>DigitalOcean</strong>.  
+  For tools like Coolify, CapRover, and Dokku, see the <a href="/website-tools/self-hosting/"><strong>Self-Hosting</strong></a> page.
+</Card>
 
 ### Why these hosting providers?
 

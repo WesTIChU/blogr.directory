@@ -3,11 +3,22 @@ title: Blogging Platforms
 description: Platforms and tools used to create and publish blogs
 ---
 
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+<CardGrid cols={2}>
+  <Card title="Start simple" icon="rocket">
+    Use a hosted platform if you just want to write and publish without setup.
+  </Card>
+  <Card title="Own everything" icon="gear">
+    Self-hosted tools give you full control over your site, design, and content.
+  </Card>
+</CardGrid>
+
 Tools and platforms people use to write and publish blogs — from simple hosted options to fully self-hosted setups.
 
 ---
 
-### 🧱 Hosted Platforms (Easy to Start)
+### 🧱 Hosted Platforms
 
 * <a href="https://wordpress.com" target="_blank" rel="noopener noreferrer"><strong>WordPress.com</strong></a> – Hosted version of WordPress, easy to get started.
 * <a href="https://ghost.org" target="_blank" rel="noopener noreferrer"><strong>Ghost</strong></a> – Clean, modern publishing platform focused on writing.
@@ -17,7 +28,7 @@ Tools and platforms people use to write and publish blogs — from simple hosted
 
 ---
 
-### 🧠 Self-Hosted Platforms (More Control)
+### 🧠 Self-Hosted Platforms
 
 * <a href="https://wordpress.org" target="_blank" rel="noopener noreferrer"><strong>WordPress.org</strong></a> – Full control, plugins, themes, and flexibility.
 * <a href="https://ghost.org/docs/install/" target="_blank" rel="noopener noreferrer"><strong>Ghost (Self-Hosted)</strong></a> – Fast, modern, and focused on content.
@@ -29,7 +40,7 @@ Tools and platforms people use to write and publish blogs — from simple hosted
 
 ### ⚡ Modern & Developer-Friendly
 
-* <a href="https://astro.build" target="_blank" rel="noopener noreferrer"><strong>Astro</strong></a> – Static-first framework (what this site uses 👀).
+* <a href="https://astro.build" target="_blank" rel="noopener noreferrer"><strong>Astro</strong></a> – Static-first framework for content-rich websites.
 * <a href="https://nextjs.org" target="_blank" rel="noopener noreferrer"><strong>Next.js</strong></a> – React framework for building fast websites.
 * <a href="https://nuxt.com" target="_blank" rel="noopener noreferrer"><strong>Nuxt</strong></a> – Vue-based framework for modern web apps.
 * <a href="https://svelte.dev" target="_blank" rel="noopener noreferrer"><strong>SvelteKit</strong></a> – Lightweight framework for fast web apps.
@@ -44,6 +55,10 @@ Tools and platforms people use to write and publish blogs — from simple hosted
 * <a href="https://listed.to" target="_blank" rel="noopener noreferrer"><strong>Listed</strong></a> – Blogging powered by Standard Notes.
 
 ---
+
+<Card>
+  👉 If you're unsure: start with <strong>WordPress.com</strong> or <strong>Ghost</strong>, then move to self-hosted later if you want more control.
+</Card>
 
 ### Why these platforms?
 

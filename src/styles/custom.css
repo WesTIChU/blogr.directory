@@ -182,7 +182,7 @@ button[aria-controls="starlight__sidebar"] {
 
 
 /* ============================= */
-/* FMHY-STYLE SIDEBAR (FINAL FIX) */
+/* SIDEBAR */
 /* ============================= */
 
 /* Base */
@@ -304,3 +304,51 @@ button[aria-controls="starlight__sidebar"] {
 	opacity: 0.15;
 }
 
+
+
+.logo-text {
+	letter-spacing: 0.2px;
+	font-weight: 600;
+	text-decoration: none;
+	color: inherit;
+	display: inline-flex;
+	align-items: center;
+}
+
+.logo-r {
+	color: #7dd3fc;
+	font-weight: 700;
+	display: inline-block;
+	transition: transform 0.2s ease, text-shadow 0.2s ease;
+}
+
+.logo-text:hover .logo-r {
+	transform: translateY(-1px);
+	text-shadow: 0 0 8px rgba(125, 211, 252, 0.6);
+}
+
+.logo-text {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+
+.logo-r {
+  color: #7dd3fc;
+  font-weight: 700;
+  display: inline-block;
+  transition: transform 0.2s ease, text-shadow 0.2s ease;
+}
+
+.logo-space {
+  width: 0.28em;
+  display: inline-block;
+}
+
+.logo-text:hover .logo-r {
+  transform: translateY(-1px);
+  text-shadow: 0 0 8px rgba(125, 211, 252, 0.6);
+}
