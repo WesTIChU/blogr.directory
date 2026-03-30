@@ -171,3 +171,10 @@ button[aria-controls="starlight__sidebar"] {
   outline: 3px solid rgb(13, 13, 12) !important;
 }
 
+
+.desc {
+	font-size: 0.9rem;
+	color: var(--sl-color-gray-3);
+	display: block;
+	margin-top: 0.2rem;
+}
