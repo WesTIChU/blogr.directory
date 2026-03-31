@@ -1,6 +1,6 @@
 # BlogR Directory
 
-> A curated collection of human-written websites, blogs, and real corners of the internet.
+> A curated collection of human written websites, blogs, and real corners of the internet.
 
 ---
 
