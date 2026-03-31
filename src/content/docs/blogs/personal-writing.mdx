@@ -3,10 +3,8 @@ title: Personal Writing
 description: Curated list of human-written blogs and personal websites
 ---
 
-import { Badge } from '@astrojs/starlight/components';
 import HumanWrittenNotes from '../../../components/HumanWrittenNotes.astro';
-import { Card } from '@astrojs/starlight/components';
-import { Aside } from '@astrojs/starlight/components';
+import BlogLink from '../../../components/BlogLink.astro';
 
 <HumanWrittenNotes />
 
@@ -14,30 +12,31 @@ import { Aside } from '@astrojs/starlight/components';
 
 ### 📝 Personal Blogs & Life Writing
 
-* ⭐ <a href="https://ruggedscot.com" target="_blank" rel="noopener noreferrer"><strong>RuggedScot</strong></a> – Scottish life, travel, thoughts, and everyday moments. <Badge text="NEW" size="small" variant="success" />
-* ⭐ <a href="https://www.thechaoticscot.com" target="_blank" rel="noopener noreferrer"><strong>The Chaotic Scot</strong></a> – Honest writing on Scottish life and experiences. <Badge text="NEW" size="small" variant="success" />
-* <a href="https://brr.fyi/" target="_blank" rel="noopener noreferrer"><strong>brr.fyi</strong></a> – Notes and observations from daily life working in Antarctica. <Badge text="NLU" size="small" />
-* <a href="https://alis.me" target="_blank" rel="noopener noreferrer"><strong>alis.me</strong></a> – Personal site with short thoughts, sketches, and creative notes. <Badge text="NEW" size="small" variant="success" />
-* <a href="http://www.16bit.com/" target="_blank" rel="noopener noreferrer"><strong>16bit</strong></a> – Music-related site with blog-style updates and creative posts. <Badge text="NEW" size="small" variant="success" />
-* <a href="https://www.jamesreeves.co/notebook/" target="_blank" rel="noopener noreferrer"><strong>James Reeves</strong></a> – Personal notebook of reflections, travel notes, and creative fragments.
-* <a href="https://sanlive.com/" target="_blank" rel="noopener noreferrer"><strong>Sanlive</strong></a> – Personal blog and digital garden of writing, hobbies, and everyday thoughts. <Badge text="NLU" size="small" />
-* <a href="https://roytang.net/" target="_blank" rel="noopener noreferrer"><strong>Roy Tang</strong></a> – Long-running personal blog covering life, tech, games, and everyday thoughts.
-* <a href="https://alongtheray.com/" target="_blank" rel="noopener noreferrer"><strong>Along the Ray</strong></a> – Personal blog of nomadic life, travel, and reflective writing from the road. <Badge text="NLU" size="small" />
-* <a href="https://andrewdoran.uk/blog/" target="_blank" rel="noopener noreferrer"><strong>Andrew Doran</strong></a> – Personal blog with weeknotes, reflections, and everyday thoughts. <Badge text="NEW" size="small" variant="success" />
-* <a href="https://www.buttercupfestival.com/" target="_blank" rel="noopener noreferrer"><strong>Buttercup Festival</strong></a> – Festival site featuring updates and blog-style content. <Badge text="NEW" size="small" variant="success" />
-* <a href="https://antharris.co/" target="_blank" rel="noopener noreferrer"><strong>Ant Harris</strong></a> – Personal blog of reflections, projects, and yearly challenges.
-* <a href="https://drwho.virtadpt.net/" target="_blank" rel="noopener noreferrer"><strong>Antarctica Starts Here</strong></a> – Personal blog covering life, tech, and everyday thoughts.
-* <a href="https://bacardi55.io/" target="_blank" rel="noopener noreferrer"><strong>Bacardi55’s Web Cave</strong></a> – Personal blog on self-hosting, tech, and everyday thoughts.
-* <a href="https://wheresalice.info/" target="_blank" rel="noopener noreferrer"><strong>wheresalice.info</strong></a> – Personal blog of tech notes, linkdumps, and indie web experiments.
-* <a href="https://islandinthenet.com/" target="_blank" rel="noopener noreferrer"><strong>Island in the Net</strong></a> – Personal blog on tech, photography, hiking, and everyday life. <Badge text="NEW" size="small" variant="success" />
-* <a href="https://autisticasfxxk.com/" target="_blank" rel="noopener noreferrer"><strong>Autistic As Fxxk</strong></a> – Personal writing on navigating life, identity, and lived experience. <Badge text="NEW" size="small" variant="success" />
-* <a href="https://alabamayesterdays.blogspot.com/" target="_blank" rel="noopener noreferrer"><strong>Alabama Yesterdays</strong></a> – A personal blog preserving Alabama history, nostalgia, and local stories. <Badge text="NEW" size="small" variant="success" />
-* <a href="http://www.cherryandspoon.com/" target="_blank" rel="noopener noreferrer"><strong>Cherry and Spoon</strong></a> – Personal blog reviewing theatre, musicals, and live performances. <Badge text="NEW" size="small" variant="success" />
-* <a href="https://handeaux.tumblr.com/" target="_blank" rel="noopener noreferrer"><strong>Handeaux</strong></a> – Personal blog sharing quirky and lesser-known stories from Cincinnati history.
-* <a href="https://cupofjo.com" target="_blank" rel="noopener noreferrer"><strong>Cup of Jo</strong></a> – Personal stories, relationships, and life.
-* <a href="https://thebloggess.com" target="_blank" rel="noopener noreferrer"><strong>The Bloggess</strong></a> – Raw, emotional, and often humorous writing.
-* <a href="https://logofspartina.blogspot.com/" target="_blank" rel="noopener noreferrer"><strong>Log of Spartina</strong></a> – Personal blog-style posts and casual writing. <Badge text="NEW" size="small" variant="success" />
-* <a href="https://www.beautyalchemist.com/" target="_blank" rel="noopener noreferrer"><strong>Beauty Alchemist</strong></a> – Personal beauty blog with product reviews and honest opinions. <Badge text="NEW" size="small" variant="success" />
+<ul>
+  <BlogLink data="https://ruggedscot.com|RuggedScot|Scottish life, travel, thoughts, and everyday moments.|NEW|⭐" />
+  <BlogLink data="https://www.thechaoticscot.com|The Chaotic Scot|Honest writing on Scottish life and experiences.|NEW|⭐" />
+  <BlogLink data="https://brr.fyi/|brr.fyi|Notes and observations from daily life working in Antarctica.|NLU" />
+  <BlogLink data="https://alis.me|alis.me|Personal site with short thoughts, sketches, and creative notes.|NEW" />
+  <BlogLink data="https://www.jamesreeves.co/notebook/|James Reeves|Personal notebook of reflections, travel notes, and creative fragments." />
+  <BlogLink data="https://sanlive.com/|Sanlive|Personal blog and digital garden of writing, hobbies, and everyday thoughts.|NLU" />
+  <BlogLink data="https://roytang.net/|Roy Tang|Long-running personal blog covering life, tech, games, and everyday thoughts." />
+  <BlogLink data="https://alongtheray.com/|Along the Ray|Personal blog of nomadic life, travel, and reflective writing from the road.|NLU" />
+  <BlogLink data="https://andrewdoran.uk/blog/|Andrew Doran|Personal blog with weeknotes, reflections, and everyday thoughts.|NEW" />
+  <BlogLink data="https://www.buttercupfestival.com/|Buttercup Festival|Festival site featuring updates and blog-style content.|NEW" />
+  <BlogLink data="https://antharris.co/|Ant Harris|Personal blog of reflections, projects, and yearly challenges." />
+  <BlogLink data="https://drwho.virtadpt.net/|Antarctica Starts Here|Personal blog covering life, tech, and everyday thoughts." />
+  <BlogLink data="https://bacardi55.io/|Bacardi55’s Web Cave|Personal blog on self-hosting, tech, and everyday thoughts." />
+  <BlogLink data="https://wheresalice.info/|wheresalice.info|Personal blog of tech notes, linkdumps, and indie web experiments." />
+  <BlogLink data="https://islandinthenet.com/|Island in the Net|Personal blog on tech, photography, hiking, and everyday life.|NEW" />
+  <BlogLink data="https://autisticasfxxk.com/|Autistic As Fxxk|Personal writing on navigating life, identity, and lived experience.|NEW" />
+  <BlogLink data="https://alabamayesterdays.blogspot.com/|Alabama Yesterdays|A personal blog preserving Alabama history, nostalgia, and local stories.|NEW" />
+  <BlogLink data="http://www.cherryandspoon.com/|Cherry and Spoon|Personal blog reviewing theatre, musicals, and live performances.|NEW" />
+  <BlogLink data="https://handeaux.tumblr.com/|Handeaux|Personal blog sharing quirky and lesser-known stories from Cincinnati history." />
+  <BlogLink data="https://cupofjo.com|Cup of Jo|Personal stories, relationships, and life." />
+  <BlogLink data="https://thebloggess.com|The Bloggess|Raw, emotional, and often humorous writing." />
+  <BlogLink data="https://logofspartina.blogspot.com/|Log of Spartina|Personal blog-style posts and casual writing.|NEW" />
+  <BlogLink data="https://www.beautyalchemist.com/|Beauty Alchemist|Personal beauty blog with product reviews and honest opinions.|NEW" />
+</ul>
 
 *Last Updated: 31/03/2026*
 
@@ -45,15 +44,17 @@ import { Aside } from '@astrojs/starlight/components';
 
 ### 📓 Journals & Indie Writing
 
-* <a href="https://marco.org" target="_blank" rel="noopener noreferrer"><strong>Marco.org</strong></a> – Personal notes on tech and life. <Badge text="NLU" size="small" />
-* <a href="https://sive.rs" target="_blank" rel="noopener noreferrer"><strong>Derek Sivers</strong></a> – Simple, honest life reflections.
-* <a href="https://alisonwilder.com/blog/" target="_blank" rel="noopener noreferrer"><strong>Alison Wilder</strong></a> – Personal writing on music, creativity, and everyday life on the indie web. <Badge text="NEW" size="small" variant="success" />
-* <a href="https://skaterfish.net/" target="_blank" rel="noopener noreferrer"><strong>Skaterfish</strong></a> – Indie web site with pixel art, coding, and personal thoughts. <Badge text="NEW" size="small" variant="success" />
-* <a href="https://commentingon.xyz/" target="_blank" rel="noopener noreferrer"><strong>commentingon.xyz</strong></a> – Raw, conversational writing with a personal tone. <Badge text="NEW" size="small" variant="success" />
-* <a href="https://rmv.fyi/" target="_blank" rel="noopener noreferrer"><strong>rmv.fyi</strong></a> – Personal site blending writing, design, and creative work.
-* <a href="https://jahir.dev" target="_blank" rel="noopener noreferrer"><strong>Jahir.dev</strong></a> – Developer portfolio with projects, experiments, and occasional writing.
-* <a href="https://jorgesanz.net/" target="_blank" rel="noopener noreferrer"><strong>Jorge Sanz</strong></a> – Blog on electronics, 3D printing, and maker projects.
-* <a href="https://christiano.dev/" target="_blank" rel="noopener noreferrer"><strong>Christiano.dev</strong></a> – Notes and writing on data engineering, open source, and learning in public.
+<ul>
+  <BlogLink data="https://marco.org|Marco.org|Personal notes on tech and life.|NLU" />
+  <BlogLink data="https://sive.rs|Derek Sivers|Simple, honest life reflections." />
+  <BlogLink data="https://alisonwilder.com/blog/|Alison Wilder|Personal writing on music, creativity, and everyday life on the indie web.|NEW" />
+  <BlogLink data="https://skaterfish.net/|Skaterfish|Indie web site with pixel art, coding, and personal thoughts.|NEW" />
+  <BlogLink data="https://commentingon.xyz/|commentingon.xyz|Raw, conversational writing with a personal tone.|NEW" />
+  <BlogLink data="https://rmv.fyi/|rmv.fyi|Personal site blending writing, design, and creative work." />
+  <BlogLink data="https://jahir.dev|Jahir.dev|Developer portfolio with projects, experiments, and occasional writing." />
+  <BlogLink data="https://jorgesanz.net/|Jorge Sanz|Blog on electronics, 3D printing, and maker projects." />
+  <BlogLink data="https://christiano.dev/|Christiano.dev|Notes and writing on data engineering, open source, and learning in public." />
+</ul>
 
 *Last Updated: 31/03/2026*
 
@@ -61,21 +62,22 @@ import { Aside } from '@astrojs/starlight/components';
 
 ### 🧠 Essays, Thinking & Big Ideas
 
-* <a href="https://paulgraham.com/articles.html" target="_blank" rel="noopener noreferrer"><strong>Paul Graham</strong></a> – Essays on life, work, and thinking.
-* <a href="https://www.anildash.com/" target="_blank" rel="noopener noreferrer"><strong>Anil Dash</strong></a> – Essays on technology, culture, and the impact of the web. <Badge text="NEW" size="small" variant="success" />
-* <a href="https://seirdy.one/" target="_blank" rel="noopener noreferrer"><strong>Seirdy</strong></a> – Essays on accessibility, privacy, and building a more humane web. <Badge text="NLU" size="small" />
-* <a href="https://piszek.com/" target="_blank" rel="noopener noreferrer"><strong>Artur Piszek</strong></a> – Essays on technology, remote work, and how the internet shapes society.
-* <a href="https://stratechery.com" target="_blank" rel="noopener noreferrer"><strong>Stratechery</strong></a> – Deep analysis of tech and business.
-* <a href="https://www.collaborativefund.com/blog/" target="_blank" rel="noopener noreferrer"><strong>Collaborative Fund</strong></a> – Thoughts on money, behaviour, and life.
-* <a href="https://waitbutwhy.com" target="_blank" rel="noopener noreferrer"><strong>Wait But Why</strong></a> – Deep, thoughtful posts on life and the future. <Badge text="NLU" size="small" />
-* <a href="https://seths.blog" target="_blank" rel="noopener noreferrer"><strong>Seth’s Blog</strong></a> – Short daily ideas on work and creativity.
-* <a href="https://markmanson.net/articles" target="_blank" rel="noopener noreferrer"><strong>Mark Manson</strong></a> – Honest writing on life and mindset.
-* <a href="https://caltrain-hsr.blogspot.com/" target="_blank" rel="noopener noreferrer"><strong>Caltrain HSR Blog</strong></a> – Rail infrastructure and high-speed rail analysis.
-* <a href="https://speedbird.wordpress.com/" target="_blank" rel="noopener noreferrer"><strong>Speedbird</strong></a> – Essays on cities, technology, and society.
-* <a href="https://darekkay.com/" target="_blank" rel="noopener noreferrer"><strong>Darek Kay</strong></a> – Writing on accessibility, productivity, and thoughtful web use. <Badge text="NEW" size="small" variant="success" />
-* <a href="https://jonaharagon.com/" target="_blank" rel="noopener noreferrer"><strong>Jonah Aragon</strong></a> – Privacy, cybersecurity, and digital rights writing. <Badge text="NEW" size="small" variant="success" />
-* <a href="https://thegoaliesanxiety.wordpress.com/" target="_blank" rel="noopener noreferrer"><strong>The Goalie’s Anxiety</strong></a> – Thoughtful essays and reflective writing from an independent voice. <Badge text="NEW" size="small" variant="success" />
-
+<ul>
+  <BlogLink data="https://paulgraham.com/articles.html|Paul Graham|Essays on life, work, and thinking." />
+  <BlogLink data="https://www.anildash.com/|Anil Dash|Essays on technology, culture, and the impact of the web.|NEW" />
+  <BlogLink data="https://seirdy.one/|Seirdy|Essays on accessibility, privacy, and building a more humane web.|NLU" />
+  <BlogLink data="https://piszek.com/|Artur Piszek|Essays on technology, remote work, and how the internet shapes society." />
+  <BlogLink data="https://stratechery.com|Stratechery|Deep analysis of tech and business." />
+  <BlogLink data="https://www.collaborativefund.com/blog/|Collaborative Fund|Thoughts on money, behaviour, and life." />
+  <BlogLink data="https://waitbutwhy.com|Wait But Why|Deep, thoughtful posts on life and the future.|NLU" />
+  <BlogLink data="https://seths.blog|Seth’s Blog|Short daily ideas on work and creativity." />
+  <BlogLink data="https://markmanson.net/articles|Mark Manson|Honest writing on life and mindset." />
+  <BlogLink data="https://caltrain-hsr.blogspot.com/|Caltrain HSR Blog|Rail infrastructure and high-speed rail analysis." />
+  <BlogLink data="https://speedbird.wordpress.com/|Speedbird|Essays on cities, technology, and society." />
+  <BlogLink data="https://darekkay.com/|Darek Kay|Writing on accessibility, productivity, and thoughtful web use.|NEW" />
+  <BlogLink data="https://jonaharagon.com/|Jonah Aragon|Privacy, cybersecurity, and digital rights writing.|NEW" />
+  <BlogLink data="https://thegoaliesanxiety.wordpress.com/|The Goalie’s Anxiety|Thoughtful essays and reflective writing from an independent voice.|NEW" />
+</ul>
 
 *Last Updated: 31/03/2026*
 
@@ -83,9 +85,11 @@ import { Aside } from '@astrojs/starlight/components';
 
 ### 📅 Daily Notes & Ongoing Writing
 
-* <a href="https://austinkleon.com" target="_blank" rel="noopener noreferrer"><strong>Austin Kleon</strong></a> – Creative living and everyday ideas.
-* <a href="https://simonwillison.net" target="_blank" rel="noopener noreferrer"><strong>Simon Willison</strong></a> – Daily notes on tech and curiosity.
-* <a href="https://andrewchen.com" target="_blank" rel="noopener noreferrer"><strong>Andrew Chen</strong></a> – Work, startups, and growth thoughts. <Badge text="NLU" size="small" />
+<ul>
+  <BlogLink data="https://austinkleon.com|Austin Kleon|Creative living and everyday ideas." />
+  <BlogLink data="https://simonwillison.net|Simon Willison|Daily notes on tech and curiosity." />
+  <BlogLink data="https://andrewchen.com|Andrew Chen|Work, startups, and growth thoughts.|NLU" />
+</ul>
 
 *Last Updated: 31/03/2026*
 
@@ -93,8 +97,10 @@ import { Aside } from '@astrojs/starlight/components';
 
 ### 🌿 Lifestyle & Mindset
 
-* <a href="https://www.becomingminimalist.com" target="_blank" rel="noopener noreferrer"><strong>Becoming Minimalist</strong></a> – Simple living and intentional mindset. <Badge text="NLU" size="small" />
-* <a href="https://www.theminimalists.com" target="_blank" rel="noopener noreferrer"><strong>The Minimalists</strong></a> – Living with less and focusing on what matters.
+<ul>
+  <BlogLink data="https://www.becomingminimalist.com|Becoming Minimalist|Simple living and intentional mindset.|NLU" />
+  <BlogLink data="https://www.theminimalists.com|The Minimalists|Living with less and focusing on what matters." />
+</ul>
 
 *Last Updated: 31/03/2026*
 
@@ -102,11 +108,13 @@ import { Aside } from '@astrojs/starlight/components';
 
 ### 🌍 Internet Culture & The Web
 
-* <a href="https://waxy.org/" target="_blank" rel="noopener noreferrer"><strong>Waxy.org</strong></a> – Long-running blog covering internet culture and media.
-* <a href="https://blog.geocities.institute/" target="_blank" rel="noopener noreferrer"><strong>Geocities Institute</strong></a> – Preserving early web culture.
-* <a href="https://blog.archive.org/" target="_blank" rel="noopener noreferrer"><strong>Internet Archive Blog</strong></a> – Digital preservation and web history.
-* <a href="https://addenda.ghost.io/" target="_blank" rel="noopener noreferrer"><strong>Addenda</strong></a> – Thoughtful writing on the internet and society.
-* <a href="https://found-media-archive.neocities.org/" target="_blank" rel="noopener noreferrer"><strong>Found Media Archive</strong></a> – Archive exploring forgotten physical media and internet culture. <Badge text="NEW" size="small" variant="success" />
+<ul>
+  <BlogLink data="https://waxy.org/|Waxy.org|Long-running blog covering internet culture and media." />
+  <BlogLink data="https://blog.geocities.institute/|Geocities Institute|Preserving early web culture." />
+  <BlogLink data="https://blog.archive.org/|Internet Archive Blog|Digital preservation and web history." />
+  <BlogLink data="https://addenda.ghost.io/|Addenda|Thoughtful writing on the internet and society." />
+  <BlogLink data="https://found-media-archive.neocities.org/|Found Media Archive|Archive exploring forgotten physical media and internet culture.|NEW" />
+</ul>
 
 *Last Updated: 31/03/2026*
 
@@ -114,10 +122,12 @@ import { Aside } from '@astrojs/starlight/components';
 
 ### 🎨 Creative & Experimental
 
-* <a href="https://microgravities.net/" target="_blank" rel="noopener noreferrer"><strong>microgravities</strong></a> – Experimental personal site with artistic worldbuilding and writing. <Badge text="NEW" size="small" variant="success" />
-* <a href="https://gaze.systems/" target="_blank" rel="noopener noreferrer"><strong>gaze.systems</strong></a> – Minimal personal site exploring creative and technical ideas. <Badge text="NEW" size="small" variant="success" />
-* <a href="https://rawr.fun/" target="_blank" rel="noopener noreferrer"><strong>rawr.fun</strong></a> – Playful, chaotic personal internet space. <Badge text="NEW" size="small" variant="success" />
-* <a href="https://pilledtexts.com/" target="_blank" rel="noopener noreferrer"><strong>pilledtexts</strong></a> – Ultra-minimal archive of raw internet writing. <Badge text="NLU" size="small" />
+<ul>
+  <BlogLink data="https://microgravities.net/|microgravities|Experimental personal site with artistic worldbuilding and writing.|NEW" />
+  <BlogLink data="https://gaze.systems/|gaze.systems|Minimal personal site exploring creative and technical ideas.|NEW" />
+  <BlogLink data="https://rawr.fun/|rawr.fun|Playful, chaotic personal internet space.|NEW" />
+  <BlogLink data="https://pilledtexts.com/|pilledtexts|Ultra-minimal archive of raw internet writing.|NLU" />
+</ul>
 
 *Last Updated: 31/03/2026*
 
@@ -125,10 +135,12 @@ import { Aside } from '@astrojs/starlight/components';
 
 ### 💭 Independent Voices
 
-* <a href="https://erinkissane.com/" target="_blank" rel="noopener noreferrer"><strong>Erin Kissane</strong></a> – Essays on communities and moderation. <Badge text="NLU" size="small" />
-* <a href="https://www.amygoodchild.com/blog" target="_blank" rel="noopener noreferrer"><strong>Amy Goodchild</strong></a> – Creativity and freelance life.
-* <a href="https://librearts.org/" target="_blank" rel="noopener noreferrer"><strong>Libre Arts</strong></a> – Free software, design, and independence.
-* <a href="https://aaronparecki.com/" target="_blank" rel="noopener noreferrer"><strong>Aaron Parecki</strong></a> – Indie web and open standards.
+<ul>
+  <BlogLink data="https://erinkissane.com/|Erin Kissane|Essays on communities and moderation.|NLU" />
+  <BlogLink data="https://www.amygoodchild.com/blog|Amy Goodchild|Creativity and freelance life." />
+  <BlogLink data="https://librearts.org/|Libre Arts|Free software, design, and independence." />
+  <BlogLink data="https://aaronparecki.com/|Aaron Parecki|Indie web and open standards." />
+</ul>
 
 *Last Updated: 31/03/2026*
 

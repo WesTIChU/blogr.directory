@@ -1,0 +1,41 @@
+---
+interface Props {
+  data: string;
+}
+
+const { data } = Astro.props;
+const parts = data.split("|").map((p) => p.trim());
+
+// Always safe defaults
+const href = parts[0] || "";
+const name = parts[1] || "";
+const description = parts[2] || "";
+
+// Smart detection
+let badge = "";
+let favorite = false;
+
+for (let i = 3; i < parts.length; i++) {
+  const val = parts[i]?.toUpperCase();
+
+  if (val === "⭐") favorite = true;
+  else if (val === "NEW" || val === "NLU") badge = val;
+}
+---
+
+<li class="blog-link-item">
+  <span>
+    {favorite && "⭐ "}
+    <a href={href} target="_blank" rel="noopener noreferrer">
+      <strong>{name}</strong>
+    </a>
+    {" – "}
+    {description}
+
+    {badge && (
+      <span class={`badge ${badge.toLowerCase()}`}>
+        {badge}
+      </span>
+    )}
+  </span>
+</li>

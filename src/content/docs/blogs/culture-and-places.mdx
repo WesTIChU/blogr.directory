@@ -3,8 +3,8 @@ title: Culture & Places
 description: Curated list of human-written blogs about culture, places, and everyday life
 ---
 
-import { Badge } from '@astrojs/starlight/components';
 import HumanWrittenNotes from '../../../components/HumanWrittenNotes.astro';
+import BlogLink from '../../../components/BlogLink.astro';
 
 <HumanWrittenNotes />
 
@@ -12,14 +12,16 @@ import HumanWrittenNotes from '../../../components/HumanWrittenNotes.astro';
 
 ### 🏛️ Culture, History & Places
 
-* <a href="https://blog.britishnewspaperarchive.co.uk/" target="_blank" rel="noopener noreferrer"><strong>British Newspaper Archive Blog</strong></a> – UK history, archives, and old newspapers.
-* <a href="https://eastofelveden.com/" target="_blank" rel="noopener noreferrer"><strong>East of Elveden</strong></a> – Rural Suffolk life, history, and countryside writing.
-* <a href="https://www.ephemeral80s.co.uk/" target="_blank" rel="noopener noreferrer"><strong>Ephemeral 80s</strong></a> – Nostalgia and British 80s culture.
-* <a href="https://lancashirepast.com/" target="_blank" rel="noopener noreferrer"><strong>Lancashire Past</strong></a> – Local history and heritage.
-* <a href="https://literarybritain.co.uk/blog/" target="_blank" rel="noopener noreferrer"><strong>Literary Britain</strong></a> – British literary places and history. <Badge text="NLU" size="small" />
-* <a href="https://britishcoast.wordpress.com/" target="_blank" rel="noopener noreferrer"><strong>British Coast</strong></a> – Coastal places and geography.
-* <a href="https://scarfolk.blogspot.com/" target="_blank" rel="noopener noreferrer"><strong>Scarfolk</strong></a> – Dark satire of retro culture and society. <Badge text="NLU" size="small" />
-* <a href="https://shapersofthe80s.com/what-the/" target="_blank" rel="noopener noreferrer"><strong>Shapers of the 80s</strong></a> – Pop culture and media history. <Badge text="NEW" size="small" variant="success" />
+<ul>
+  <BlogLink data="https://blog.britishnewspaperarchive.co.uk/|British Newspaper Archive Blog|UK history, archives, and old newspapers." />
+  <BlogLink data="https://eastofelveden.com/|East of Elveden|Rural Suffolk life, history, and countryside writing." />
+  <BlogLink data="https://www.ephemeral80s.co.uk/|Ephemeral 80s|Nostalgia and British 80s culture." />
+  <BlogLink data="https://lancashirepast.com/|Lancashire Past|Local history and heritage." />
+  <BlogLink data="https://literarybritain.co.uk/blog/|Literary Britain|British literary places and history.|NLU" />
+  <BlogLink data="https://britishcoast.wordpress.com/|British Coast|Coastal places and geography." />
+  <BlogLink data="https://scarfolk.blogspot.com/|Scarfolk|Dark satire of retro culture and society.|NLU" />
+  <BlogLink data="https://shapersofthe80s.com/what-the/|Shapers of the 80s|Pop culture and media history.|NEW" />
+</ul>
 
 *Last Updated: 31/03/2026*
 
@@ -27,8 +29,10 @@ import HumanWrittenNotes from '../../../components/HumanWrittenNotes.astro';
 
 ### 🌿 Nature, Countryside & Environment
 
-* <a href="https://testvalleyriverkeeper.blogspot.com/" target="_blank" rel="noopener noreferrer"><strong>Test Valley Riverkeeper</strong></a> – Life on a chalk stream, conservation, and rural England.
-* <a href="https://thenewenglishlandscape.wordpress.com/" target="_blank" rel="noopener noreferrer"><strong>The New English Landscape</strong></a> – Landscape, environment, and place writing. <Badge text="NLU" size="small" />
+<ul>
+  <BlogLink data="https://testvalleyriverkeeper.blogspot.com/|Test Valley Riverkeeper|Life on a chalk stream, conservation, and rural England." />
+  <BlogLink data="https://thenewenglishlandscape.wordpress.com/|The New English Landscape|Landscape, environment, and place writing.|NLU" />
+</ul>
 
 *Last Updated: 31/03/2026*
 
@@ -36,8 +40,10 @@ import HumanWrittenNotes from '../../../components/HumanWrittenNotes.astro';
 
 ### 🚶 Outdoors, Walking & Exploration
 
-* ⭐ <a href="https://coastalwalker.co.uk/" target="_blank" rel="noopener noreferrer"><strong>Coastal Walker</strong></a> – Walking the coastline, routes, maps, and personal journey. <Badge text="NEW" size="small" variant="success" />
-* <a href="https://5000milewalk.co.uk/" target="_blank" rel="noopener noreferrer"><strong>A 5000 Mile Walk</strong></a> – A long-distance journey walking the entire coastline of mainland Britain.
+<ul>
+  <BlogLink data="https://coastalwalker.co.uk/|Coastal Walker|Walking the coastline, routes, maps, and personal journey.|NEW|⭐" />
+  <BlogLink data="https://5000milewalk.co.uk/|A 5000 Mile Walk|A long-distance journey walking the entire coastline of mainland Britain." />
+</ul>
 
 *Last Updated: 31/03/2026*
 
@@ -45,13 +51,15 @@ import HumanWrittenNotes from '../../../components/HumanWrittenNotes.astro';
 
 ### 🏙️ Local Life & Communities
 
-* <a href="https://postabdn.com/" target="_blank" rel="noopener noreferrer"><strong>Post Aberdeen</strong></a> – Local stories, community, and city life.
-* <a href="https://theemptycity.com/" target="_blank" rel="noopener noreferrer"><strong>The Empty City</strong></a> – Urban exploration and abandoned spaces.
-* <a href="https://www.janetgyford.com/" target="_blank" rel="noopener noreferrer"><strong>Janet Gyford</strong></a> – Personal writing, local life, and countryside reflections.
-* <a href="https://thehazeltree.co.uk/" target="_blank" rel="noopener noreferrer"><strong>The Hazel Tree</strong></a> – Quiet rural life and personal reflections.
-* <a href="http://www.merseytart.com/" target="_blank" rel="noopener noreferrer"><strong>Mersey Tart</strong></a> – Liverpool culture and commentary.
-* <a href="https://merseypub.blogspot.com/" target="_blank" rel="noopener noreferrer"><strong>Mersey Pub</strong></a> – Pub culture and local history.
-* <a href="https://glasgowgallivanter.com/" target="_blank" rel="noopener noreferrer"><strong>Glasgow Gallivanter</strong></a> – Exploring Glasgow through walks, local spots, and everyday city life.
+<ul>
+  <BlogLink data="https://postabdn.com/|Post Aberdeen|Local stories, community, and city life." />
+  <BlogLink data="https://theemptycity.com/|The Empty City|Urban exploration and abandoned spaces." />
+  <BlogLink data="https://www.janetgyford.com/|Janet Gyford|Personal writing, local life, and countryside reflections." />
+  <BlogLink data="https://thehazeltree.co.uk/|The Hazel Tree|Quiet rural life and personal reflections." />
+  <BlogLink data="http://www.merseytart.com/|Mersey Tart|Liverpool culture and commentary." />
+  <BlogLink data="https://merseypub.blogspot.com/|Mersey Pub|Pub culture and local history." />
+  <BlogLink data="https://glasgowgallivanter.com/|Glasgow Gallivanter|Exploring Glasgow through walks, local spots, and everyday city life." />
+</ul>
 
 *Last Updated: 31/03/2026*
 
@@ -59,7 +67,9 @@ import HumanWrittenNotes from '../../../components/HumanWrittenNotes.astro';
 
 ### 🚆 Transport & Getting Around
 
-* <a href="https://busandtrainuser.com/" target="_blank" rel="noopener noreferrer"><strong>Bus & Train User</strong></a> – Public transport experiences and reviews.
+<ul>
+  <BlogLink data="https://busandtrainuser.com/|Bus & Train User|Public transport experiences and reviews." />
+</ul>
 
 *Last Updated: 31/03/2026*
 
@@ -67,8 +77,10 @@ import HumanWrittenNotes from '../../../components/HumanWrittenNotes.astro';
 
 ### 🧠 Society, Politics & Commentary
 
-* <a href="https://conservativehome.com/" target="_blank" rel="noopener noreferrer"><strong>ConservativeHome</strong></a> – Political commentary and opinion.
-* <a href="https://liberalengland.blogspot.com/" target="_blank" rel="noopener noreferrer"><strong>Liberal England</strong></a> – Politics, history, and commentary.
+<ul>
+  <BlogLink data="https://conservativehome.com/|ConservativeHome|Political commentary and opinion." />
+  <BlogLink data="https://liberalengland.blogspot.com/|Liberal England|Politics, history, and commentary." />
+</ul>
 
 *Last Updated: 31/03/2026*
 

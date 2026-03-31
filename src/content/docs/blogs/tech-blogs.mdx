@@ -3,21 +3,23 @@ title: Tech Blogs
 description: Curated list of tech personal blogs
 ---
 
-import { Badge } from '@astrojs/starlight/components';
-import { Aside } from '@astrojs/starlight/components';
-import { Icon } from '@astrojs/starlight/components';
 import HumanWrittenNotes from '../../../components/HumanWrittenNotes.astro';
+import BlogLink from '../../../components/BlogLink.astro';
 
 <HumanWrittenNotes />
 
+---
+
 ### 🧠 Indie Dev Blogs (Personal & High-Quality)
 
-* <a href="https://mediocregopher.com/posts/" target="_blank" rel="noopener noreferrer"><strong>Mediocre Gopher</strong></a> – Deep dives into Go, systems thinking, and software design.
-* <a href="https://thenumb.at/" target="_blank" rel="noopener noreferrer"><strong>The Numb</strong></a> – Technical explorations of algorithms and low-level systems.
-* <a href="https://yuanchuan.dev/" target="_blank" rel="noopener noreferrer"><strong>Yuanchuan’s Blog</strong></a> – Thoughtful posts on backend systems and engineering.
-* <a href="https://fgiesen.wordpress.com/" target="_blank" rel="noopener noreferrer"><strong>Fabian Giesen</strong></a> – Graphics programming and deep technical breakdowns. <Badge text="NLU" size="small" /> 
-* <a href="https://momentsingraphics.de/" target="_blank" rel="noopener noreferrer"><strong>Moments in Graphics</strong></a> – Advanced rendering techniques and GPU insights. <Badge text="NLU" size="small" /> 
-* <a href="https://simonschreibt.de/" target="_blank" rel="noopener noreferrer"><strong>Simon Schreibt</strong></a> – Game art and how visuals actually work.
+<ul>
+  <BlogLink data="https://mediocregopher.com/posts/|Mediocre Gopher|Deep dives into Go, systems thinking, and software design." />
+  <BlogLink data="https://thenumb.at/|The Numb|Technical explorations of algorithms and low-level systems." />
+  <BlogLink data="https://yuanchuan.dev/|Yuanchuan’s Blog|Thoughtful posts on backend systems and engineering." />
+  <BlogLink data="https://fgiesen.wordpress.com/|Fabian Giesen|Graphics programming and deep technical breakdowns.|NLU" />
+  <BlogLink data="https://momentsingraphics.de/|Moments in Graphics|Advanced rendering techniques and GPU insights.|NLU" />
+  <BlogLink data="https://simonschreibt.de/|Simon Schreibt|Game art and how visuals actually work." />
+</ul>
 
 *Last Updated: 31/03/2026*
 
@@ -25,13 +27,15 @@ import HumanWrittenNotes from '../../../components/HumanWrittenNotes.astro';
 
 ### 🧑‍💻 Frontend & Developer Blogs
 
-* ⭐ <a href="https://www.joshwcomeau.com" target="_blank" rel="noopener noreferrer"><strong>Josh Comeau</strong></a> – Frontend tutorials and interactive learning.
-* <a href="https://overreacted.io" target="_blank" rel="noopener noreferrer"><strong>Overreacted</strong></a> – React deep dives by Dan Abramov.
-* ⭐ <a href="https://www.taniarascia.com" target="_blank" rel="noopener noreferrer"><strong>Tania Rascia</strong></a> – Web development guides.
-* <a href="https://davidwalsh.name" target="_blank" rel="noopener noreferrer"><strong>David Walsh</strong></a> – JavaScript tips and tricks.
-* <a href="https://www.jvt.me/posts/" target="_blank" rel="noopener noreferrer"><strong>Jamie Tanna</strong></a> – Practical dev tutorials.
-* <a href="https://kentcdodds.com/blog" target="_blank" rel="noopener noreferrer"><strong>Kent C. Dodds</strong></a> – Testing, React, and JavaScript.
-* <a href="https://kryogenix.org" target="_blank" rel="noopener noreferrer"><strong>Stuart Langridge</strong></a> – Open-source and developer thoughts.
+<ul>
+  <BlogLink data="https://www.joshwcomeau.com|Josh Comeau|Frontend tutorials and interactive learning.|⭐" />
+  <BlogLink data="https://overreacted.io|Overreacted|React deep dives by Dan Abramov." />
+  <BlogLink data="https://www.taniarascia.com|Tania Rascia|Web development guides.|⭐" />
+  <BlogLink data="https://davidwalsh.name|David Walsh|JavaScript tips and tricks." />
+  <BlogLink data="https://www.jvt.me/posts/|Jamie Tanna|Practical dev tutorials." />
+  <BlogLink data="https://kentcdodds.com/blog|Kent C. Dodds|Testing, React, and JavaScript." />
+  <BlogLink data="https://kryogenix.org|Stuart Langridge|Open-source and developer thoughts." />
+</ul>
 
 *Last Updated: 31/03/2026*
 
@@ -39,10 +43,12 @@ import HumanWrittenNotes from '../../../components/HumanWrittenNotes.astro';
 
 ### 🏠 Self-Hosting & Homelab
 
-* <a href="https://www.linuxserver.io/blog" target="_blank" rel="noopener noreferrer"><strong>LinuxServer.io Blog</strong></a> – Self-hosting guides.
-* <a href="https://perfectmediaserver.com" target="_blank" rel="noopener noreferrer"><strong>Perfect Media Server</strong></a> – Homelab setups.
-* <a href="https://www.smarthomebeginner.com" target="_blank" rel="noopener noreferrer"><strong>SmarthomeBeginner</strong></a> – Docker and automation.
-* <a href="https://awesome-selfhosted.net" target="_blank" rel="noopener noreferrer"><strong>Awesome Selfhosted</strong></a> – Self-hosted tools directory.
+<ul>
+  <BlogLink data="https://www.linuxserver.io/blog|LinuxServer.io Blog|Self-hosting guides." />
+  <BlogLink data="https://perfectmediaserver.com|Perfect Media Server|Homelab setups." />
+  <BlogLink data="https://www.smarthomebeginner.com|SmarthomeBeginner|Docker and automation." />
+  <BlogLink data="https://awesome-selfhosted.net|Awesome Selfhosted|Self-hosted tools directory." />
+</ul>
 
 *Last Updated: 31/03/2026*
 
@@ -50,9 +56,11 @@ import HumanWrittenNotes from '../../../components/HumanWrittenNotes.astro';
 
 ### 🐧 Linux & Open Source
 
-* <a href="https://itsfoss.com" target="_blank" rel="noopener noreferrer"><strong>It's FOSS</strong></a> – Linux tutorials.
-* <a href="https://www.omgubuntu.co.uk" target="_blank" rel="noopener noreferrer"><strong>OMG! Ubuntu!</strong></a> – Ubuntu news and tips.
-* <a href="https://debugpoint.com" target="_blank" rel="noopener noreferrer"><strong>DebugPoint</strong></a> – Linux guides and fixes.
+<ul>
+  <BlogLink data="https://itsfoss.com|It's FOSS|Linux tutorials." />
+  <BlogLink data="https://www.omgubuntu.co.uk|OMG! Ubuntu!|Ubuntu news and tips." />
+  <BlogLink data="https://debugpoint.com|DebugPoint|Linux guides and fixes." />
+</ul>
 
 *Last Updated: 31/03/2026*
 
@@ -60,11 +68,13 @@ import HumanWrittenNotes from '../../../components/HumanWrittenNotes.astro';
 
 ### 🎮 Graphics, Creative Coding & Visual Work
 
-* <a href="https://bartwronski.com/" target="_blank" rel="noopener noreferrer"><strong>Bart Wronski</strong></a> – Graphics programming and rendering. <Badge text="NLU" size="small" /> 
-* <a href="https://pixelesque.net/blog/" target="_blank" rel="noopener noreferrer"><strong>Pixelesque</strong></a> – Pixel art and design.
-* <a href="https://brendandawes.com/blog" target="_blank" rel="noopener noreferrer"><strong>Brendan Dawes</strong></a> – Digital art and creative coding.
-* <a href="https://www.justinpinkney.com/" target="_blank" rel="noopener noreferrer"><strong>Justin Pinkney</strong></a> – Creative experiments and visual tools. <Badge text="NLU" size="small" /> 
-* <a href="https://frankforce.com/" target="_blank" rel="noopener noreferrer"><strong>Frank Force</strong></a> – Game dev and shader experiments.
+<ul>
+  <BlogLink data="https://bartwronski.com/|Bart Wronski|Graphics programming and rendering.|NLU" />
+  <BlogLink data="https://pixelesque.net/blog/|Pixelesque|Pixel art and design." />
+  <BlogLink data="https://brendandawes.com/blog|Brendan Dawes|Digital art and creative coding." />
+  <BlogLink data="https://www.justinpinkney.com/|Justin Pinkney|Creative experiments and visual tools.|NLU" />
+  <BlogLink data="https://frankforce.com/|Frank Force|Game dev and shader experiments." />
+</ul>
 
 *Last Updated: 31/03/2026*
 
@@ -72,7 +82,9 @@ import HumanWrittenNotes from '../../../components/HumanWrittenNotes.astro';
 
 ### 🌐 Tech, Industry & Infrastructure
 
-* <a href="https://www.ispreview.co.uk/" target="_blank" rel="noopener noreferrer"><strong>ISPreview</strong></a> – UK broadband news, telecom infrastructure, and internet industry analysis.
+<ul>
+  <BlogLink data="https://www.ispreview.co.uk/|ISPreview|UK broadband news, telecom infrastructure, and internet industry analysis." />
+</ul>
 
 *Last Updated: 31/03/2026*
 
@@ -80,12 +92,14 @@ import HumanWrittenNotes from '../../../components/HumanWrittenNotes.astro';
 
 ### 🌐 Large Dev Resources (Not Personal Blogs)
 
-* <a href="https://css-tricks.com" target="_blank" rel="noopener noreferrer"><strong>CSS-Tricks</strong></a> – Frontend guides and tutorials.
-* <a href="https://www.smashingmagazine.com" target="_blank" rel="noopener noreferrer"><strong>Smashing Magazine</strong></a> – Web design and dev articles.
-* <a href="https://www.freecodecamp.org/news/" target="_blank" rel="noopener noreferrer"><strong>FreeCodeCamp</strong></a> – Beginner tutorials.
-* <a href="https://www.digitalocean.com/community/tutorials" target="_blank" rel="noopener noreferrer"><strong>DigitalOcean Community</strong></a> – Dev and server guides.
-* <a href="https://betterprogramming.pub" target="_blank" rel="noopener noreferrer"><strong>Better Programming</strong></a> – Medium-based dev content. <Badge text="NLU" size="small" /> 
-* <a href="https://hackernoon.com" target="_blank" rel="noopener noreferrer"><strong>Hacker Noon</strong></a> – Aggregated tech stories.
+<ul>
+  <BlogLink data="https://css-tricks.com|CSS-Tricks|Frontend guides and tutorials." />
+  <BlogLink data="https://www.smashingmagazine.com|Smashing Magazine|Web design and dev articles." />
+  <BlogLink data="https://www.freecodecamp.org/news/|FreeCodeCamp|Beginner tutorials." />
+  <BlogLink data="https://www.digitalocean.com/community/tutorials|DigitalOcean Community|Dev and server guides." />
+  <BlogLink data="https://betterprogramming.pub|Better Programming|Medium-based dev content.|NLU" />
+  <BlogLink data="https://hackernoon.com|Hacker Noon|Aggregated tech stories." />
+</ul>
 
 *Last Updated: 31/03/2026*
 

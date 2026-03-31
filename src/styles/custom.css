@@ -352,3 +352,25 @@ button[aria-controls="starlight__sidebar"] {
   transform: translateY(-1px);
   text-shadow: 0 0 8px rgba(125, 211, 252, 0.6);
 }
+
+.badge {
+  display: inline-block;
+  min-width: 2.5rem;
+  text-align: center;
+  padding: 0.1rem 0.35rem;
+  border-radius: 0.35rem;
+  font-size: 0.75rem;
+  line-height: 1.2;
+  vertical-align: middle;
+  margin-left: 0.35rem;
+}
+
+.badge.new {
+  background: #5b8f2d;
+  color: white;
+}
+
+.badge.nlu {
+  background: #0b8ea3;
+  color: white;
+}
