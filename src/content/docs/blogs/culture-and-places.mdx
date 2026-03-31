@@ -4,7 +4,7 @@ description: Curated list of human-written blogs about culture, places, and ever
 ---
 
 import HumanWrittenNotes from '../../../components/HumanWrittenNotes.astro';
-import BlogLink from '../../../components/BlogLink.astro';
+import BlogSection from '../../../components/BlogSection.astro';
 
 <HumanWrittenNotes />
 
@@ -12,16 +12,18 @@ import BlogLink from '../../../components/BlogLink.astro';
 
 ### 🏛️ Culture, History & Places
 
-<ul>
-  <BlogLink data="https://blog.britishnewspaperarchive.co.uk/|British Newspaper Archive Blog|UK history, archives, and old newspapers." />
-  <BlogLink data="https://eastofelveden.com/|East of Elveden|Rural Suffolk life, history, and countryside writing." />
-  <BlogLink data="https://www.ephemeral80s.co.uk/|Ephemeral 80s|Nostalgia and British 80s culture." />
-  <BlogLink data="https://lancashirepast.com/|Lancashire Past|Local history and heritage." />
-  <BlogLink data="https://literarybritain.co.uk/blog/|Literary Britain|British literary places and history.|NLU" />
-  <BlogLink data="https://britishcoast.wordpress.com/|British Coast|Coastal places and geography." />
-  <BlogLink data="https://scarfolk.blogspot.com/|Scarfolk|Dark satire of retro culture and society.|NLU" />
-  <BlogLink data="https://shapersofthe80s.com/what-the/|Shapers of the 80s|Pop culture and media history.|NEW" />
-</ul>
+<BlogSection
+  links={[
+    "https://blog.britishnewspaperarchive.co.uk/|British Newspaper Archive Blog|UK history, archives, and old newspapers.",
+    "https://eastofelveden.com/|East of Elveden|Rural Suffolk life, history, and countryside writing.",
+    "https://www.ephemeral80s.co.uk/|Ephemeral 80s|Nostalgia and British 80s culture.",
+    "https://lancashirepast.com/|Lancashire Past|Local history and heritage.",
+    "https://literarybritain.co.uk/blog/|Literary Britain|British literary places and history.|NLU",
+    "https://britishcoast.wordpress.com/|British Coast|Coastal places and geography.",
+    "https://scarfolk.blogspot.com/|Scarfolk|Dark satire of retro culture and society.|NLU",
+    "https://shapersofthe80s.com/what-the/|Shapers of the 80s|Pop culture and media history.|NEW"
+  ]}
+/>
 
 *Last Updated: 31/03/2026*
 
@@ -29,10 +31,12 @@ import BlogLink from '../../../components/BlogLink.astro';
 
 ### 🌿 Nature, Countryside & Environment
 
-<ul>
-  <BlogLink data="https://testvalleyriverkeeper.blogspot.com/|Test Valley Riverkeeper|Life on a chalk stream, conservation, and rural England." />
-  <BlogLink data="https://thenewenglishlandscape.wordpress.com/|The New English Landscape|Landscape, environment, and place writing.|NLU" />
-</ul>
+<BlogSection
+  links={[
+    "https://testvalleyriverkeeper.blogspot.com/|Test Valley Riverkeeper|Life on a chalk stream, conservation, and rural England.",
+    "https://thenewenglishlandscape.wordpress.com/|The New English Landscape|Landscape, environment, and place writing.|NLU"
+  ]}
+/>
 
 *Last Updated: 31/03/2026*
 
@@ -40,10 +44,12 @@ import BlogLink from '../../../components/BlogLink.astro';
 
 ### 🚶 Outdoors, Walking & Exploration
 
-<ul>
-  <BlogLink data="https://coastalwalker.co.uk/|Coastal Walker|Walking the coastline, routes, maps, and personal journey.|NEW|⭐" />
-  <BlogLink data="https://5000milewalk.co.uk/|A 5000 Mile Walk|A long-distance journey walking the entire coastline of mainland Britain." />
-</ul>
+<BlogSection
+  links={[
+    "https://coastalwalker.co.uk/|Coastal Walker|Walking the coastline, routes, maps, and personal journey.|NEW|⭐",
+    "https://5000milewalk.co.uk/|A 5000 Mile Walk|A long-distance journey walking the entire coastline of mainland Britain."
+  ]}
+/>
 
 *Last Updated: 31/03/2026*
 
@@ -51,15 +57,17 @@ import BlogLink from '../../../components/BlogLink.astro';
 
 ### 🏙️ Local Life & Communities
 
-<ul>
-  <BlogLink data="https://postabdn.com/|Post Aberdeen|Local stories, community, and city life." />
-  <BlogLink data="https://theemptycity.com/|The Empty City|Urban exploration and abandoned spaces." />
-  <BlogLink data="https://www.janetgyford.com/|Janet Gyford|Personal writing, local life, and countryside reflections." />
-  <BlogLink data="https://thehazeltree.co.uk/|The Hazel Tree|Quiet rural life and personal reflections." />
-  <BlogLink data="http://www.merseytart.com/|Mersey Tart|Liverpool culture and commentary." />
-  <BlogLink data="https://merseypub.blogspot.com/|Mersey Pub|Pub culture and local history." />
-  <BlogLink data="https://glasgowgallivanter.com/|Glasgow Gallivanter|Exploring Glasgow through walks, local spots, and everyday city life." />
-</ul>
+<BlogSection
+  links={[
+    "https://postabdn.com/|Post Aberdeen|Local stories, community, and city life.",
+    "https://theemptycity.com/|The Empty City|Urban exploration and abandoned spaces.",
+    "https://www.janetgyford.com/|Janet Gyford|Personal writing, local life, and countryside reflections.",
+    "https://thehazeltree.co.uk/|The Hazel Tree|Quiet rural life and personal reflections.",
+    "http://www.merseytart.com/|Mersey Tart|Liverpool culture and commentary.",
+    "https://merseypub.blogspot.com/|Mersey Pub|Pub culture and local history.",
+    "https://glasgowgallivanter.com/|Glasgow Gallivanter|Exploring Glasgow through walks, local spots, and everyday city life."
+  ]}
+/>
 
 *Last Updated: 31/03/2026*
 
@@ -67,9 +75,11 @@ import BlogLink from '../../../components/BlogLink.astro';
 
 ### 🚆 Transport & Getting Around
 
-<ul>
-  <BlogLink data="https://busandtrainuser.com/|Bus & Train User|Public transport experiences and reviews." />
-</ul>
+<BlogSection
+  links={[
+    "https://busandtrainuser.com/|Bus & Train User|Public transport experiences and reviews."
+  ]}
+/>
 
 *Last Updated: 31/03/2026*
 
@@ -77,10 +87,12 @@ import BlogLink from '../../../components/BlogLink.astro';
 
 ### 🧠 Society, Politics & Commentary
 
-<ul>
-  <BlogLink data="https://conservativehome.com/|ConservativeHome|Political commentary and opinion." />
-  <BlogLink data="https://liberalengland.blogspot.com/|Liberal England|Politics, history, and commentary." />
-</ul>
+<BlogSection
+  links={[
+    "https://conservativehome.com/|ConservativeHome|Political commentary and opinion.",
+    "https://liberalengland.blogspot.com/|Liberal England|Politics, history, and commentary."
+  ]}
+/>
 
 *Last Updated: 31/03/2026*
 

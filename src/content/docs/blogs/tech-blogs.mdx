@@ -4,7 +4,7 @@ description: Curated list of tech personal blogs
 ---
 
 import HumanWrittenNotes from '../../../components/HumanWrittenNotes.astro';
-import BlogLink from '../../../components/BlogLink.astro';
+import BlogSection from '../../../components/BlogSection.astro';
 
 <HumanWrittenNotes />
 
@@ -12,14 +12,16 @@ import BlogLink from '../../../components/BlogLink.astro';
 
 ### 🧠 Indie Dev Blogs (Personal & High-Quality)
 
-<ul>
-  <BlogLink data="https://mediocregopher.com/posts/|Mediocre Gopher|Deep dives into Go, systems thinking, and software design." />
-  <BlogLink data="https://thenumb.at/|The Numb|Technical explorations of algorithms and low-level systems." />
-  <BlogLink data="https://yuanchuan.dev/|Yuanchuan’s Blog|Thoughtful posts on backend systems and engineering." />
-  <BlogLink data="https://fgiesen.wordpress.com/|Fabian Giesen|Graphics programming and deep technical breakdowns.|NLU" />
-  <BlogLink data="https://momentsingraphics.de/|Moments in Graphics|Advanced rendering techniques and GPU insights.|NLU" />
-  <BlogLink data="https://simonschreibt.de/|Simon Schreibt|Game art and how visuals actually work." />
-</ul>
+<BlogSection
+  links={[
+    "https://mediocregopher.com/posts/|Mediocre Gopher|Deep dives into Go, systems thinking, and software design.",
+    "https://thenumb.at/|The Numb|Technical explorations of algorithms and low-level systems.",
+    "https://yuanchuan.dev/|Yuanchuan’s Blog|Thoughtful posts on backend systems and engineering.",
+    "https://fgiesen.wordpress.com/|Fabian Giesen|Graphics programming and deep technical breakdowns.|NLU",
+    "https://momentsingraphics.de/|Moments in Graphics|Advanced rendering techniques and GPU insights.|NLU",
+    "https://simonschreibt.de/|Simon Schreibt|Game art and how visuals actually work."
+  ]}
+/>
 
 *Last Updated: 31/03/2026*
 
@@ -27,15 +29,17 @@ import BlogLink from '../../../components/BlogLink.astro';
 
 ### 🧑‍💻 Frontend & Developer Blogs
 
-<ul>
-  <BlogLink data="https://www.joshwcomeau.com|Josh Comeau|Frontend tutorials and interactive learning.|⭐" />
-  <BlogLink data="https://overreacted.io|Overreacted|React deep dives by Dan Abramov." />
-  <BlogLink data="https://www.taniarascia.com|Tania Rascia|Web development guides.|⭐" />
-  <BlogLink data="https://davidwalsh.name|David Walsh|JavaScript tips and tricks." />
-  <BlogLink data="https://www.jvt.me/posts/|Jamie Tanna|Practical dev tutorials." />
-  <BlogLink data="https://kentcdodds.com/blog|Kent C. Dodds|Testing, React, and JavaScript." />
-  <BlogLink data="https://kryogenix.org|Stuart Langridge|Open-source and developer thoughts." />
-</ul>
+<BlogSection
+  links={[
+    "https://www.joshwcomeau.com|Josh Comeau|Frontend tutorials and interactive learning.|⭐",
+    "https://overreacted.io|Overreacted|React deep dives by Dan Abramov.",
+    "https://www.taniarascia.com|Tania Rascia|Web development guides.|⭐",
+    "https://davidwalsh.name|David Walsh|JavaScript tips and tricks.",
+    "https://www.jvt.me/posts/|Jamie Tanna|Practical dev tutorials.",
+    "https://kentcdodds.com/blog|Kent C. Dodds|Testing, React, and JavaScript.",
+    "https://kryogenix.org|Stuart Langridge|Open-source and developer thoughts."
+  ]}
+/>
 
 *Last Updated: 31/03/2026*
 
@@ -43,12 +47,14 @@ import BlogLink from '../../../components/BlogLink.astro';
 
 ### 🏠 Self-Hosting & Homelab
 
-<ul>
-  <BlogLink data="https://www.linuxserver.io/blog|LinuxServer.io Blog|Self-hosting guides." />
-  <BlogLink data="https://perfectmediaserver.com|Perfect Media Server|Homelab setups." />
-  <BlogLink data="https://www.smarthomebeginner.com|SmarthomeBeginner|Docker and automation." />
-  <BlogLink data="https://awesome-selfhosted.net|Awesome Selfhosted|Self-hosted tools directory." />
-</ul>
+<BlogSection
+  links={[
+    "https://www.linuxserver.io/blog|LinuxServer.io Blog|Self-hosting guides.",
+    "https://perfectmediaserver.com|Perfect Media Server|Homelab setups.",
+    "https://www.smarthomebeginner.com|SmarthomeBeginner|Docker and automation.",
+    "https://awesome-selfhosted.net|Awesome Selfhosted|Self-hosted tools directory."
+  ]}
+/>
 
 *Last Updated: 31/03/2026*
 
@@ -56,11 +62,13 @@ import BlogLink from '../../../components/BlogLink.astro';
 
 ### 🐧 Linux & Open Source
 
-<ul>
-  <BlogLink data="https://itsfoss.com|It's FOSS|Linux tutorials." />
-  <BlogLink data="https://www.omgubuntu.co.uk|OMG! Ubuntu!|Ubuntu news and tips." />
-  <BlogLink data="https://debugpoint.com|DebugPoint|Linux guides and fixes." />
-</ul>
+<BlogSection
+  links={[
+    "https://itsfoss.com|It's FOSS|Linux tutorials.",
+    "https://www.omgubuntu.co.uk|OMG! Ubuntu!|Ubuntu news and tips.",
+    "https://debugpoint.com|DebugPoint|Linux guides and fixes."
+  ]}
+/>
 
 *Last Updated: 31/03/2026*
 
@@ -68,13 +76,15 @@ import BlogLink from '../../../components/BlogLink.astro';
 
 ### 🎮 Graphics, Creative Coding & Visual Work
 
-<ul>
-  <BlogLink data="https://bartwronski.com/|Bart Wronski|Graphics programming and rendering.|NLU" />
-  <BlogLink data="https://pixelesque.net/blog/|Pixelesque|Pixel art and design." />
-  <BlogLink data="https://brendandawes.com/blog|Brendan Dawes|Digital art and creative coding." />
-  <BlogLink data="https://www.justinpinkney.com/|Justin Pinkney|Creative experiments and visual tools.|NLU" />
-  <BlogLink data="https://frankforce.com/|Frank Force|Game dev and shader experiments." />
-</ul>
+<BlogSection
+  links={[
+    "https://bartwronski.com/|Bart Wronski|Graphics programming and rendering.|NLU",
+    "https://pixelesque.net/blog/|Pixelesque|Pixel art and design.",
+    "https://brendandawes.com/blog|Brendan Dawes|Digital art and creative coding.",
+    "https://www.justinpinkney.com/|Justin Pinkney|Creative experiments and visual tools.|NLU",
+    "https://frankforce.com/|Frank Force|Game dev and shader experiments."
+  ]}
+/>
 
 *Last Updated: 31/03/2026*
 
@@ -82,9 +92,11 @@ import BlogLink from '../../../components/BlogLink.astro';
 
 ### 🌐 Tech, Industry & Infrastructure
 
-<ul>
-  <BlogLink data="https://www.ispreview.co.uk/|ISPreview|UK broadband news, telecom infrastructure, and internet industry analysis." />
-</ul>
+<BlogSection
+  links={[
+    "https://www.ispreview.co.uk/|ISPreview|UK broadband news, telecom infrastructure, and internet industry analysis."
+  ]}
+/>
 
 *Last Updated: 31/03/2026*
 
@@ -92,14 +104,16 @@ import BlogLink from '../../../components/BlogLink.astro';
 
 ### 🌐 Large Dev Resources (Not Personal Blogs)
 
-<ul>
-  <BlogLink data="https://css-tricks.com|CSS-Tricks|Frontend guides and tutorials." />
-  <BlogLink data="https://www.smashingmagazine.com|Smashing Magazine|Web design and dev articles." />
-  <BlogLink data="https://www.freecodecamp.org/news/|FreeCodeCamp|Beginner tutorials." />
-  <BlogLink data="https://www.digitalocean.com/community/tutorials|DigitalOcean Community|Dev and server guides." />
-  <BlogLink data="https://betterprogramming.pub|Better Programming|Medium-based dev content.|NLU" />
-  <BlogLink data="https://hackernoon.com|Hacker Noon|Aggregated tech stories." />
-</ul>
+<BlogSection
+  links={[
+    "https://css-tricks.com|CSS-Tricks|Frontend guides and tutorials.",
+    "https://www.smashingmagazine.com|Smashing Magazine|Web design and dev articles.",
+    "https://www.freecodecamp.org/news/|FreeCodeCamp|Beginner tutorials.",
+    "https://www.digitalocean.com/community/tutorials|DigitalOcean Community|Dev and server guides.",
+    "https://betterprogramming.pub|Better Programming|Medium-based dev content.|NLU",
+    "https://hackernoon.com|Hacker Noon|Aggregated tech stories."
+  ]}
+/>
 
 *Last Updated: 31/03/2026*
 

@@ -1,0 +1,47 @@
+---
+import BlogLink from './BlogLink.astro';
+
+interface Props {
+  links: string[];
+}
+
+const { links } = Astro.props;
+
+const parseBlog = (data: string) => {
+  const parts = data.split("|").map((p) => p.trim());
+
+  const href = parts[0] || "";
+  const name = parts[1] || "";
+  const description = parts[2] || "";
+
+  let badge = "";
+  let favorite = false;
+
+  for (let i = 3; i < parts.length; i++) {
+    const val = parts[i];
+
+    if (val === "⭐") favorite = true;
+    else if (val?.toUpperCase() === "NEW" || val?.toUpperCase() === "NLU") {
+      badge = val.toUpperCase();
+    }
+  }
+
+  return { data, href, name, description, badge, favorite };
+};
+
+const sortedLinks = links
+  .map(parseBlog)
+  .sort((a, b) => {
+    const aRank = a.badge === "NLU" ? 2 : a.favorite ? 0 : 1;
+    const bRank = b.badge === "NLU" ? 2 : b.favorite ? 0 : 1;
+
+    if (aRank !== bRank) return aRank - bRank;
+    return a.name.localeCompare(b.name, undefined, { sensitivity: "base" });
+  });
+---
+
+<ul>
+  {sortedLinks.map((blog) => (
+    <BlogLink data={blog.data} />
+  ))}
+</ul>

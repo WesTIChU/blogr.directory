@@ -3,21 +3,25 @@ title: Travel Blogs
 description: Curated list of human-written travel blogs
 ---
 
-import { Badge } from '@astrojs/starlight/components';
-import { Aside } from '@astrojs/starlight/components';
-import { Icon } from '@astrojs/starlight/components';
 import HumanWrittenNotes from '../../../components/HumanWrittenNotes.astro';
+import BlogSection from '../../../components/BlogSection.astro';
 
 <HumanWrittenNotes />
 
+---
+
 ### 🌍 Personal Travel Blogs
 
-* <a href="https://www.danflyingsolo.com" target="_blank" rel="noopener noreferrer"><strong>Dan Flying Solo</strong></a> - Personal travel blog with photography.
-* <a href="https://www.alexinwanderland.com" target="_blank" rel="noopener noreferrer"><strong>Alex in Wanderland</strong></a> - Travel stories and guides. <Badge text="NLU" size="small" /> 
-* <a href="https://www.handluggageonly.co.uk" target="_blank" rel="noopener noreferrer"><strong>Hand Luggage Only</strong></a> - Travel experiences and guides. <Badge text="NLU" size="small" /> 
-* <a href="https://www.theblondeabroad.com" target="_blank" rel="noopener noreferrer"><strong>The Blonde Abroad</strong></a> - Solo female travel blog.
-* <a href="https://www.annaeverywhere.com" target="_blank" rel="noopener noreferrer"><strong>Anna Everywhere</strong></a> - Personal travel and expat life.
-* <a href="https://www.theplanetd.com" target="_blank" rel="noopener noreferrer"><strong>The Planet D</strong></a> - Travel adventures worldwide. <Badge text="NLU" size="small" />
+<BlogSection
+  links={[
+    "https://www.danflyingsolo.com|Dan Flying Solo|Personal travel blog with photography.",
+    "https://www.alexinwanderland.com|Alex in Wanderland|Travel stories and guides.|NLU",
+    "https://www.handluggageonly.co.uk|Hand Luggage Only|Travel experiences and guides.|NLU",
+    "https://www.theblondeabroad.com|The Blonde Abroad|Solo female travel blog.",
+    "https://www.annaeverywhere.com|Anna Everywhere|Personal travel and expat life.",
+    "https://www.theplanetd.com|The Planet D|Travel adventures worldwide.|NLU"
+  ]}
+/>
 
 *Last Updated: 31/03/2026*
 
@@ -25,12 +29,16 @@ import HumanWrittenNotes from '../../../components/HumanWrittenNotes.astro';
 
 ### 💸 Budget & Long-Term Travel
 
-* <a href="https://www.nomadicmatt.com/travel-blog/" target="_blank" rel="noopener noreferrer"><strong>Nomadic Matt</strong></a> - Budget travel tips and guides.
-* <a href="https://www.thebrokebackpacker.com" target="_blank" rel="noopener noreferrer"><strong>The Broke Backpacker</strong></a> - Backpacking and budget travel.
-* <a href="https://www.neverendingfootsteps.com" target="_blank" rel="noopener noreferrer"><strong>Never Ending Footsteps</strong></a> - Long-term travel experiences.
-* <a href="https://expertvagabond.com" target="_blank" rel="noopener noreferrer"><strong>Expert Vagabond</strong></a> - Adventure and travel tips. <Badge text="NLU" size="small" /> 
-* <a href="https://www.twowanderingsoles.com" target="_blank" rel="noopener noreferrer"><strong>Two Wandering Soles</strong></a> - Budget travel and guides.
-* <a href="https://www.davestravelpages.com" target="_blank" rel="noopener noreferrer"><strong>Dave’s Travel Pages</strong></a> - Long-term travel and cycling.
+<BlogSection
+  links={[
+    "https://www.nomadicmatt.com/travel-blog/|Nomadic Matt|Budget travel tips and guides.",
+    "https://www.thebrokebackpacker.com|The Broke Backpacker|Backpacking and budget travel.",
+    "https://www.neverendingfootsteps.com|Never Ending Footsteps|Long-term travel experiences.",
+    "https://expertvagabond.com|Expert Vagabond|Adventure and travel tips.|NLU",
+    "https://www.twowanderingsoles.com|Two Wandering Soles|Budget travel and guides.",
+    "https://www.davestravelpages.com|Dave’s Travel Pages|Long-term travel and cycling."
+  ]}
+/>
 
 *Last Updated: 31/03/2026*
 
@@ -38,11 +46,15 @@ import HumanWrittenNotes from '../../../components/HumanWrittenNotes.astro';
 
 ### ✍️ Unique & Storytelling
 
-* <a href="https://www.legalnomads.com/blog/" target="_blank" rel="noopener noreferrer"><strong>Legal Nomads</strong></a> - Travel, food, and culture stories.
-* <a href="https://www.adventurouskate.com" target="_blank" rel="noopener noreferrer"><strong>Adventurous Kate</strong></a> - Personal travel experiences.
-* <a href="https://www.theculturetrip.com" target="_blank" rel="noopener noreferrer"><strong>The Culture Trip</strong></a> - Global travel and culture stories.
-* <a href="https://migrationology.com" target="_blank" rel="noopener noreferrer"><strong>Migrationology</strong></a> - Food and travel experiences. <Badge text="NLU" size="small" /> 
-* <a href="https://www.ordinarytraveler.com" target="_blank" rel="noopener noreferrer"><strong>Ordinary Traveler</strong></a> - Travel photography and stories.
+<BlogSection
+  links={[
+    "https://www.legalnomads.com/blog/|Legal Nomads|Travel, food, and culture stories.",
+    "https://www.adventurouskate.com|Adventurous Kate|Personal travel experiences.",
+    "https://www.theculturetrip.com|The Culture Trip|Global travel and culture stories.",
+    "https://migrationology.com|Migrationology|Food and travel experiences.|NLU",
+    "https://www.ordinarytraveler.com|Ordinary Traveler|Travel photography and stories."
+  ]}
+/>
 
 *Last Updated: 31/03/2026*
 
@@ -50,10 +62,14 @@ import HumanWrittenNotes from '../../../components/HumanWrittenNotes.astro';
 
 ### 🏔️ Adventure & Outdoors Travel
 
-* <a href="https://www.alastairhumphreys.com/blog/" target="_blank" rel="noopener noreferrer"><strong>Alastair Humphreys</strong></a> - Adventure and micro-adventures.
-* <a href="https://bearfoottheory.com" target="_blank" rel="noopener noreferrer"><strong>Bearfoot Theory</strong></a> - Outdoor travel and lifestyle. <Badge text="NLU" size="small" /> 
-* <a href="https://www.cleverhiker.com/blog" target="_blank" rel="noopener noreferrer"><strong>CleverHiker</strong></a> - Hiking and outdoor travel.
-* <a href="https://www.halfwayanywhere.com" target="_blank" rel="noopener noreferrer"><strong>Halfway Anywhere</strong></a> - Hiking and long-distance trails.
+<BlogSection
+  links={[
+    "https://www.alastairhumphreys.com/blog/|Alastair Humphreys|Adventure and micro-adventures.",
+    "https://bearfoottheory.com|Bearfoot Theory|Outdoor travel and lifestyle.|NLU",
+    "https://www.cleverhiker.com/blog|CleverHiker|Hiking and outdoor travel.",
+    "https://www.halfwayanywhere.com|Halfway Anywhere|Hiking and long-distance trails."
+  ]}
+/>
 
 *Last Updated: 31/03/2026*
 
@@ -61,8 +77,12 @@ import HumanWrittenNotes from '../../../components/HumanWrittenNotes.astro';
 
 ### 🚐 Van Life & Alternative Travel
 
-* <a href="https://gnomadhome.com" target="_blank" rel="noopener noreferrer"><strong>Gnomad Home</strong></a> - Van builds and travel life.
-* <a href="https://www.thewaywardhome.com" target="_blank" rel="noopener noreferrer"><strong>The Wayward Home</strong></a> - Alternative living and travel.
+<BlogSection
+  links={[
+    "https://gnomadhome.com|Gnomad Home|Van builds and travel life.",
+    "https://www.thewaywardhome.com|The Wayward Home|Alternative living and travel."
+  ]}
+/>
 
 *Last Updated: 31/03/2026*
 
