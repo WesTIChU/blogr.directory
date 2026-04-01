@@ -4,7 +4,7 @@
 
 ---
 
-## 🌐 About
+## About
 
 BlogR Directory is a hand-curated collection of **human-written blogs, personal websites, and genuine online communities**.
 
@@ -19,7 +19,7 @@ It’s trying to be a good one.
 
 ---
 
-## ✨ What makes it different
+## What makes it different
 
 - Every site is found manually  
 - Every link is checked manually  
@@ -31,7 +31,7 @@ If it doesn’t feel human, it doesn’t go on the site.
 
 ---
 
-## 🧱 Built with
+## Built with
 
 - Astro → https://astro.build  
 - Starlight → https://starlight.astro.build  
@@ -41,7 +41,7 @@ Simple, fast, and no unnecessary bloat.
 
 ---
 
-## 🚀 Project Structure
+## Project Structure
 
     .
     ├── public/
@@ -61,7 +61,7 @@ Simple, fast, and no unnecessary bloat.
 
 ---
 
-## 🧞 Commands
+## Commands
 
 Run from the root of the project:
 
@@ -72,7 +72,7 @@ Run from the root of the project:
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Know a site worth adding?
 
@@ -98,7 +98,7 @@ All submissions are reviewed manually.
 
 ---
 
-## 🤖 AI & content
+## AI & content
 
 AI tools are fine.
 
@@ -112,7 +112,7 @@ A real voice behind it.
 
 ---
 
-## 💭 Why this exists
+## Why this exists
 
 The modern internet is full of noise.
 
@@ -123,7 +123,7 @@ This is an attempt to keep a small part of it:
 
 ---
 
-## 🙌 Final note
+## Final note
 
 This isn’t about building the biggest list.
 
