@@ -12,7 +12,7 @@ No AI sludge.
 No recycled SEO filler.  
 No content farms pretending to be useful.  
 
-Just real people writing real things.
+**Just real people writing real things.**
 
 This isn’t trying to be the biggest directory on the internet.  
 It’s trying to be a good one.
@@ -37,7 +37,7 @@ If it doesn’t feel human, it doesn’t go on the site.
 - Starlight → https://starlight.astro.build  
 - Markdown  
 
-Simple, fast, and no unnecessary bloat.
+Simple and fast
 
 ---
 
