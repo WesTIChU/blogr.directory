@@ -1,15 +1,39 @@
 ---
-// src/components/HeaderLinks.astro
 import Default from '@astrojs/starlight/components/SocialIcons.astro';
 ---
 
-<a
-  href="https://github.com/WesTIChU/blogr.directory/issues/new/choose"
-  target="_blank"
-  rel="noopener noreferrer"
-  style="margin-right: 0.9rem; font-weight: 600;"
->
-  Report AI
-</a>
+<div class="header-links">
+  <a
+    href="https://github.com/WesTIChU/blogr.directory/issues/new/choose"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="report-ai-link"
+  >
+    Report AI
+  </a>
 
-<Default><slot /></Default>
+  <Default><slot /></Default>
+</div>
+
+<style>
+  .header-links {
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+  }
+
+  .report-ai-link {
+    font-size: 0.95rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--sl-color-text);
+    opacity: 0.82;
+    transition: opacity 0.2s ease, color 0.2s ease;
+  }
+
+  .report-ai-link:hover {
+    opacity: 1;
+    color: var(--sl-color-white);
+    text-decoration: none;
+  }
+</style>
