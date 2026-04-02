@@ -14,9 +14,14 @@ export default defineConfig({
       },
 
       customCss: ['./src/styles/custom.css'],
+
       components: {
         SiteTitle: './src/components/Logo.astro',
+
+        // 👇 THIS replaces header icons and adds your link
+        SocialIcons: './src/components/HeaderLinks.astro',
       },
+
       social: [
         {
           icon: 'github',
@@ -24,6 +29,7 @@ export default defineConfig({
           href: 'https://github.com/WesTIChU/blogr.directory',
         },
       ],
+
       sidebar: [
         {
           label: 'Getting started',
