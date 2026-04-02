@@ -1,0 +1,53 @@
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-left">
+      <a href="https://github.com/WesTIChU/blogr.directory">GitHub</a>
+      <span class="divider"></span>
+      <a href="/contribute/">Submit</a>
+      <span class="divider"></span>
+      <a href="https://github.com/WesTIChU/blogr.directory/issues/new/choose">🚩 Report</a>
+    </div>
+
+    <div class="footer-right">
+      <span>© {new Date().getFullYear()} BlogR Directory</span>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .site-footer {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--sl-color-hairline);
+  }
+
+  .footer-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+    color: var(--sl-color-text);
+    opacity: 0.8;
+  }
+
+  .footer-left {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+  }
+
+  .footer-left a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .footer-left a:hover {
+    opacity: 1;
+  }
+
+  .divider {
+    width: 1px;
+    height: 14px;
+    background: var(--sl-color-hairline);
+  }
+</style>
