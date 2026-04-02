@@ -18,8 +18,6 @@ export default defineConfig({
       components: {
         SiteTitle: './src/components/Logo.astro',
         Footer: './src/components/Footer.astro', //
-
-        // 👇 THIS replaces header icons and adds your link
         SocialIcons: './src/components/HeaderLinks.astro',
       },
 
