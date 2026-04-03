@@ -1,3 +1,9 @@
+---
+import DefaultFooter from '@astrojs/starlight/components/Footer.astro';
+---
+
+<DefaultFooter />
+
 <footer class="site-footer">
   <div class="footer-inner">
     <div class="footer-left">
@@ -16,8 +22,8 @@
 
 <style>
   .site-footer {
-    margin-top: 2rem;
-    padding-top: 1.5rem;
+    margin-top: 1.5rem;
+    padding-top: 1rem;
     border-top: 1px solid var(--sl-color-hairline);
   }
 
@@ -28,12 +34,15 @@
     font-size: 0.9rem;
     color: var(--sl-color-text);
     opacity: 0.8;
+    gap: 1rem;
+    flex-wrap: wrap;
   }
 
   .footer-left {
     display: flex;
     align-items: center;
     gap: 0.6rem;
+    flex-wrap: wrap;
   }
 
   .footer-left a {
