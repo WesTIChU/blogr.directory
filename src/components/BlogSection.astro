@@ -1,47 +1,154 @@
 ---
-import BlogLink from './BlogLink.astro';
+// src/components/BlogSection.astro
 
-interface Props {
-  links: string[];
+interface Entry {
+  url: string;
+  name: string;
+  description: string;
+  badges: string[];
 }
 
-const { links } = Astro.props;
+const { links = '' } = Astro.props;
 
-const parseBlog = (data: string) => {
-  const parts = data.split("|").map((p) => p.trim());
+const parsedEntries: Entry[] = String(links)
+  .split('\n')
+  .map((line) => line.trim())
+  .filter(Boolean)
+  .filter((line) => !line.startsWith('//'))
+  .map((line) => {
+    const parts = line.split('|').map((p) => p.trim());
+    const [url, name, description, ...badges] = parts;
 
-  const href = parts[0] || "";
-  const name = parts[1] || "";
-  const description = parts[2] || "";
-
-  let badge = "";
-  let favorite = false;
-
-  for (let i = 3; i < parts.length; i++) {
-    const val = parts[i];
-
-    if (val === "⭐") favorite = true;
-    else if (val?.toUpperCase() === "NEW" || val?.toUpperCase() === "NLU") {
-      badge = val.toUpperCase();
+    if (!url || !name || !description) {
+      throw new Error(
+        `Invalid BlogSection entry: "${line}". Expected: url|name|description|optional|badges`
+      );
     }
-  }
 
-  return { data, href, name, description, badge, favorite };
-};
+    return {
+      url,
+      name,
+      description,
+      badges: badges.filter(Boolean),
+    };
+  });
 
-const sortedLinks = links
-  .map(parseBlog)
+const hasBadge = (entry: Entry, target: string) =>
+  entry.badges.some((badge) => badge.toUpperCase() === target.toUpperCase());
+
+const badgeOrder = ['⭐', 'NEW', 'NLU'];
+
+const entries = parsedEntries
+  .map((entry) => ({
+    ...entry,
+    badges: [...entry.badges].sort((a, b) => {
+      const aIndex = badgeOrder.indexOf(a.toUpperCase());
+      const bIndex = badgeOrder.indexOf(b.toUpperCase());
+      const safeA = aIndex === -1 ? 999 : aIndex;
+      const safeB = bIndex === -1 ? 999 : bIndex;
+      return safeA - safeB;
+    }),
+  }))
   .sort((a, b) => {
-    const aRank = a.badge === "NLU" ? 2 : a.favorite ? 0 : 1;
-    const bRank = b.badge === "NLU" ? 2 : b.favorite ? 0 : 1;
+    const aStar = hasBadge(a, '⭐');
+    const bStar = hasBadge(b, '⭐');
+    if (aStar !== bStar) return aStar ? -1 : 1;
 
-    if (aRank !== bRank) return aRank - bRank;
-    return a.name.localeCompare(b.name, undefined, { sensitivity: "base" });
+    const aNLU = hasBadge(a, 'NLU');
+    const bNLU = hasBadge(b, 'NLU');
+    if (aNLU !== bNLU) return aNLU ? 1 : -1;
+
+    return a.name.localeCompare(b.name, undefined, { sensitivity: 'base' });
   });
 ---
 
-<ul>
-  {sortedLinks.map((blog) => (
-    <BlogLink data={blog.data} />
+<ul class="blog-section">
+  {entries.map((entry) => (
+    <li class="blog-entry">
+      <a
+        class="blog-link"
+        href={entry.url}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {entry.name}
+      </a>
+
+      <span class="blog-separator"> — </span>
+      <span class="blog-description">{entry.description}</span>
+
+      {entry.badges.length > 0 && (
+        <span class="blog-badges">
+          {entry.badges.map((badge) => (
+            <span class={`blog-badge badge-${badge.toLowerCase()}`}>
+              {badge}
+            </span>
+          ))}
+        </span>
+      )}
+    </li>
   ))}
 </ul>
+
+<style>
+  
+  .blog-section {
+    margin-top: 0.6rem;
+    margin-bottom: 0;
+    padding-left: 1.2rem;
+  }
+
+  .blog-entry {
+    margin: 0 0 0.45rem 0;
+    line-height: 1.45;
+  }
+
+  .blog-link {
+    font-weight: 500;
+    text-decoration: none;
+  }
+
+  .blog-separator,
+  .blog-description {
+    color: var(--sl-color-text);
+  }
+
+  .blog-badges {
+    margin-left: 0.55rem;
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    vertical-align: middle;
+  }
+
+  .blog-badge {
+    font-size: 0.72rem;
+    line-height: 1;
+    padding: 0.18rem 0.4rem;
+    border-radius: 999px;
+    border: 1px solid transparent;
+    opacity: 0.95;
+  }
+
+  .badge-new {
+    background: rgba(59, 130, 246, 0.15);
+    color: #60a5fa;
+    border-color: rgba(59, 130, 246, 0.3);
+  }
+
+  .badge-nlu {
+    background: rgba(120, 120, 120, 0.2);
+    color: #d1d5db;
+    border-color: rgba(120, 120, 120, 0.3);
+  }
+
+  .badge-⭐ {
+    background: rgba(250, 204, 21, 0.16);
+    color: #facc15;
+    border-color: rgba(250, 204, 21, 0.35);
+  }
+
+  .blog-section {
+  margin-top: 1.0rem;
+}
+</style>

@@ -5,24 +5,23 @@ description: Curated list of tech personal blogs
 
 import HumanWrittenNotes from '../../../components/HumanWrittenNotes.astro';
 import BlogSection from '../../../components/BlogSection.astro';
-import ReportAIContent from '../../../components/report-ai-content.astro';
+import EditorInstructions from '../../../components/EditorInstructions.astro';
 
 <HumanWrittenNotes />
+<EditorInstructions />
 
 ---
 
 ### Indie Dev Blogs (Personal & High-Quality)
 
-<BlogSection
-  links={[
-    "https://mediocregopher.com/posts/|Mediocre Gopher|Go, systems, and software design.",
-    "https://thenumb.at/|The Numb|Algorithms and low-level systems.",
-    "https://yuanchuan.dev/|Yuanchuan’s Blog|Backend systems and engineering.",
-    "https://fgiesen.wordpress.com/|Fabian Giesen|Graphics programming deep dives.|NLU",
-    "https://momentsingraphics.de/|Moments in Graphics|Rendering and GPU insights.|NLU",
-    "https://simonschreibt.de/|Simon Schreibt|Game art and visuals."
-  ]}
-/>
+<BlogSection links={`
+https://mediocregopher.com/posts/|Mediocre Gopher|Go, systems, and software design.
+https://thenumb.at/|The Numb|Algorithms and low-level systems.
+https://yuanchuan.dev/|Yuanchuan’s Blog|Backend systems and engineering.
+https://fgiesen.wordpress.com/|Fabian Giesen|Graphics programming deep dives.|NLU
+https://momentsingraphics.de/|Moments in Graphics|Rendering and GPU insights.|NLU
+https://simonschreibt.de/|Simon Schreibt|Game art and visuals.
+`} />
 
 *Last Updated: 31/03/2026*
 
@@ -30,17 +29,15 @@ import ReportAIContent from '../../../components/report-ai-content.astro';
 
 ### Frontend & Developer Blogs
 
-<BlogSection
-  links={[
-    "https://www.joshwcomeau.com|Josh Comeau|Frontend tutorials and learning.|⭐",
-    "https://overreacted.io|Overreacted|React deep dives.",
-    "https://www.taniarascia.com|Tania Rascia|Web development guides.|⭐",
-    "https://davidwalsh.name|David Walsh|JavaScript tips.",
-    "https://www.jvt.me/posts/|Jamie Tanna|Practical dev tutorials.",
-    "https://kentcdodds.com/blog|Kent C. Dodds|Testing and React.",
-    "https://kryogenix.org|Stuart Langridge|Open source and dev thoughts."
-  ]}
-/>
+<BlogSection links={`
+https://www.joshwcomeau.com|Josh Comeau|Frontend tutorials and learning.|⭐
+https://overreacted.io|Overreacted|React deep dives.
+https://www.taniarascia.com|Tania Rascia|Web development guides.|⭐
+https://davidwalsh.name|David Walsh|JavaScript tips.
+https://www.jvt.me/posts/|Jamie Tanna|Practical dev tutorials.
+https://kentcdodds.com/blog|Kent C. Dodds|Testing and React.
+https://kryogenix.org|Stuart Langridge|Open source and dev thoughts.
+`} />
 
 *Last Updated: 31/03/2026*
 
@@ -48,20 +45,18 @@ import ReportAIContent from '../../../components/report-ai-content.astro';
 
 ### Self-Hosting & Homelab
 
-<BlogSection
-  links={[
-    "https://www.linuxserver.io/blog|LinuxServer.io Blog|Self-hosting guides.",
-    "https://perfectmediaserver.com|Perfect Media Server|Homelab setups.",
-    "https://www.smarthomebeginner.com|SmarthomeBeginner|Docker and automation.",
-    "https://awesome-selfhosted.net|Awesome Selfhosted|Self-hosted tools.",
-    "https://thehomeassistantblog.com/|The Home Assistant Blog|Home Assistant guides.|NEW",
-    "https://www.awesome-ha.com/|Awesome Home Assistant|Home Assistant tools and resources.|NEW",
-    "https://smarthomescene.com/blog/|SmartHomeScene|Guides, reviews, and Home Assistant setups.|NEW",
-    "https://www.derekseaman.com/|Derek Seaman|Home Assistant and homelab guides.|NEW",
-    "https://www.smarthomejunkie.net/|Smart Home Junkie|Home Assistant tutorials and setups.|NEW",
-    "https://www.homeautomationguy.io/|Home Automation Guy|Home Assistant guides and smart home setups.",
-  ]}
-/>
+<BlogSection links={`
+https://www.linuxserver.io/blog|LinuxServer.io Blog|Self-hosting guides.
+https://perfectmediaserver.com|Perfect Media Server|Homelab setups.
+https://www.smarthomebeginner.com|SmarthomeBeginner|Docker and automation.
+https://awesome-selfhosted.net|Awesome Selfhosted|Self-hosted tools.
+https://thehomeassistantblog.com/|The Home Assistant Blog|Home Assistant guides.|NEW
+https://www.awesome-ha.com/|Awesome Home Assistant|Home Assistant tools and resources.|NEW
+https://smarthomescene.com/blog/|SmartHomeScene|Guides, reviews, and Home Assistant setups.|NEW
+https://www.derekseaman.com/|Derek Seaman|Home Assistant and homelab guides.|NEW
+https://www.smarthomejunkie.net/|Smart Home Junkie|Home Assistant tutorials and setups.|NEW
+https://www.homeautomationguy.io/|Home Automation Guy|Home Assistant guides and smart home setups.
+`} />
 
 *Last Updated: 02/04/2026*
 
@@ -69,13 +64,11 @@ import ReportAIContent from '../../../components/report-ai-content.astro';
 
 ### Linux & Open Source
 
-<BlogSection
-  links={[
-    "https://itsfoss.com|It's FOSS|Linux tutorials.",
-    "https://www.omgubuntu.co.uk|OMG! Ubuntu!|Ubuntu news and tips.",
-    "https://debugpoint.com|DebugPoint|Linux guides and fixes."
-  ]}
-/>
+<BlogSection links={`
+https://itsfoss.com|It's FOSS|Linux tutorials.
+https://www.omgubuntu.co.uk|OMG! Ubuntu!|Ubuntu news and tips.
+https://debugpoint.com|DebugPoint|Linux guides and fixes.
+`} />
 
 *Last Updated: 31/03/2026*
 
@@ -83,15 +76,13 @@ import ReportAIContent from '../../../components/report-ai-content.astro';
 
 ### Graphics, Creative Coding & Visual Work
 
-<BlogSection
-  links={[
-    "https://bartwronski.com/|Bart Wronski|Graphics programming and rendering.|NLU",
-    "https://pixelesque.net/blog/|Pixelesque|Pixel art and design.",
-    "https://brendandawes.com/blog|Brendan Dawes|Creative coding and art.",
-    "https://www.justinpinkney.com/|Justin Pinkney|Creative tools and experiments.|NLU",
-    "https://frankforce.com/|Frank Force|Game dev and shaders.",
-  ]}
-/>
+<BlogSection links={`
+https://bartwronski.com/|Bart Wronski|Graphics programming and rendering.|NLU
+https://pixelesque.net/blog/|Pixelesque|Pixel art and design.
+https://brendandawes.com/blog|Brendan Dawes|Creative coding and art.
+https://www.justinpinkney.com/|Justin Pinkney|Creative tools and experiments.|NLU
+https://frankforce.com/|Frank Force|Game dev and shaders.
+`} />
 
 *Last Updated: 31/03/2026*
 
@@ -99,12 +90,10 @@ import ReportAIContent from '../../../components/report-ai-content.astro';
 
 ### Tech, Industry & Infrastructure
 
-<BlogSection
-  links={[
-    "https://www.ispreview.co.uk/|ISPreview|UK broadband and telecom news.",
-    "https://joost.blog/|Joost de Valk|Web, SEO, and open source thoughts.|New",
-  ]}
-/>
+<BlogSection links={`
+https://www.ispreview.co.uk/|ISPreview|UK broadband and telecom news.
+https://joost.blog/|Joost de Valk|Web, SEO, and open source thoughts.|NEW
+`} />
 
 *Last Updated: 02/04/2026*
 
@@ -112,15 +101,13 @@ import ReportAIContent from '../../../components/report-ai-content.astro';
 
 ### Large Dev Resources (Not Personal Blogs)
 
-<BlogSection
-  links={[
-    "https://css-tricks.com|CSS-Tricks|Frontend guides.",
-    "https://www.smashingmagazine.com|Smashing Magazine|Web design and dev.",
-    "https://www.freecodecamp.org/news/|FreeCodeCamp|Beginner tutorials.",
-    "https://www.digitalocean.com/community/tutorials|DigitalOcean Community|Dev and server guides.",
-    "https://betterprogramming.pub|Better Programming|Medium dev content.|NLU",
-    "https://hackernoon.com|Hacker Noon|Tech stories."
-  ]}
-/>
+<BlogSection links={`
+https://css-tricks.com|CSS-Tricks|Frontend guides.
+https://www.smashingmagazine.com|Smashing Magazine|Web design and dev.
+https://www.freecodecamp.org/news/|FreeCodeCamp|Beginner tutorials.
+https://www.digitalocean.com/community/tutorials|DigitalOcean Community|Dev and server guides.
+https://betterprogramming.pub|Better Programming|Medium dev content.|NLU
+https://hackernoon.com|Hacker Noon|Tech stories.
+`} />
 
 *Last Updated: 31/03/2026*
