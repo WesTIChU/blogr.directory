@@ -18,6 +18,7 @@ export default defineConfig({
       components: {
         SiteTitle: './src/components/Logo.astro',
         Footer: './src/components/Footer.astro', //
+        Pagination: './src/components/Pagination.astro',
         SocialIcons: './src/components/HeaderLinks.astro',
       },
 

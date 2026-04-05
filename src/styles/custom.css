@@ -376,3 +376,6 @@ button[aria-controls="starlight__sidebar"] {
 }
 
 
+:global(.sl-pagination) {
+  font-size: 0.9rem;
+}
