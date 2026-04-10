@@ -1,8 +1,21 @@
 ---
 import Default from '@astrojs/starlight/components/SocialIcons.astro';
+import { getDirectoryLinks } from '../lib/getDirectoryLinks';
+
+const links = getDirectoryLinks();
 ---
 
 <div class="header-links">
+  <a
+    href="#"
+    class="random-link"
+    data-links={JSON.stringify(links)}
+  >
+    🎲 Random Link
+  </a>
+
+  <span class="divider"></span>
+
   <a
     href="https://github.com/WesTIChU/blogr.directory/issues/new/choose"
     target="_blank"
@@ -17,6 +30,25 @@ import Default from '@astrojs/starlight/components/SocialIcons.astro';
   <Default><slot /></Default>
 </div>
 
+<script is:inline>
+  const randomLinkEl = document.querySelector('.random-link');
+
+  if (randomLinkEl) {
+    const links = JSON.parse(randomLinkEl.getAttribute('data-links') || '[]');
+
+    randomLinkEl.addEventListener('click', (event) => {
+      event.preventDefault();
+
+      if (!Array.isArray(links) || links.length === 0) return;
+
+      const randomIndex = Math.floor(Math.random() * links.length);
+      const randomUrl = links[randomIndex];
+
+      window.open(randomUrl, '_blank', 'noopener,noreferrer');
+    });
+  }
+</script>
+
 <style>
   .header-links {
     display: flex;
@@ -24,7 +56,8 @@ import Default from '@astrojs/starlight/components/SocialIcons.astro';
     gap: 0.6rem;
   }
 
-  .report-ai-link {
+  .report-ai-link,
+  .random-link {
     font-size: 0.95rem;
     font-weight: 500;
     text-decoration: none;
@@ -32,7 +65,8 @@ import Default from '@astrojs/starlight/components/SocialIcons.astro';
     opacity: 0.85;
   }
 
-  .report-ai-link:hover {
+  .report-ai-link:hover,
+  .random-link:hover {
     opacity: 1;
   }
 

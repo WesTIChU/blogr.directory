@@ -1,0 +1,32 @@
+---
+import { getRandomDirectoryLinks } from '../lib/getRandomDirectoryLinks';
+
+const links = getRandomDirectoryLinks();
+const linkData = JSON.stringify(links.map((link) => link.url));
+---
+
+<a href="#" id="random-link-trigger" data-links={linkData}>
+  Random Link
+</a>
+
+<script is:inline>
+  const trigger = document.getElementById('random-link-trigger');
+
+  if (trigger) {
+    const links = JSON.parse(trigger.dataset.links || '[]');
+
+    trigger.addEventListener('click', (event) => {
+      event.preventDefault();
+
+      if (!Array.isArray(links) || links.length === 0) {
+        console.warn('No random links found.');
+        return;
+      }
+
+      const randomIndex = Math.floor(Math.random() * links.length);
+      const randomUrl = links[randomIndex];
+
+      window.open(randomUrl, '_blank', 'noopener,noreferrer');
+    });
+  }
+</script>
