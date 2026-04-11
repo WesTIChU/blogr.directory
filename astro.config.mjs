@@ -9,6 +9,17 @@ export default defineConfig({
     starlight({
       title: 'BlogR Directory',
 
+      head: [
+        {
+          tag: 'script',
+          attrs: {
+            'data-goatcounter': 'https://stats.blogr.directory/count',
+            async: true,
+            src: '//stats.blogr.directory/count.js',
+          },
+        },
+      ],
+
       editLink: {
         baseUrl: 'https://github.com/WesTIChU/blogr.directory/edit/main/',
       },
